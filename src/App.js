@@ -34,10 +34,9 @@ function App() {
 <Link to="project201">page2</Link>
 <Link to="project301">page3</Link>
 <Link to="project401">page4</Link>
+<Link to="project401">page4</Link>
 </nav>
 </div>
-
-
 <div className='container'>
 <Lnb/>
 <div className='content'>
