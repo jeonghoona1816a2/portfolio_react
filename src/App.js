@@ -17,10 +17,7 @@ import { BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 
 
 function App() {
-
   return ( 
-
-
 <div className="App">
 
 <div className='warp'>
@@ -48,7 +45,6 @@ function App() {
   <Route path="Project401" element={<Project401/>} />
 </Routes>
 
-
 <div className='list_typ1'>
 <div className='title'><h3>유저스테이트</h3><div className='fave'><a >👍</a><span> 링클 </span></div></div>
 <span>2023년 11월 14일</span>
@@ -64,10 +60,6 @@ function App() {
 <Props age={10}/>
 
 </div>
-
-
-
-
 </div>
 
 </div>

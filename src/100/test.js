@@ -122,7 +122,6 @@ function ccc(){   return 1000; };
  * 상위 cmponent에서 만든 state 쓰려면 props 문법 
  * 이용해야함 mpn stop
  * 
- * 
 */
 
 
