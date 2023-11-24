@@ -14,6 +14,7 @@ import Project201 from './200/project201';
 import Project301 from './300/project301';
 import Project401 from './400/project401';
 import Project501 from './500/project501';
+import Project601 from './600/project601';
 import { BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 
 function App() {
