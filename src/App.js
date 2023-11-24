@@ -13,6 +13,7 @@ import Project101 from './100/project101';
 import Project201 from './200/project201';
 import Project301 from './300/project301';
 import Project401 from './400/project401';
+import Project501 from './500/project501';
 import { BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 
 
@@ -31,7 +32,7 @@ function App() {
 <Link to="project201">page2</Link>
 <Link to="project301">page3</Link>
 <Link to="project401">page4</Link>
-<Link to="project401">page4</Link>
+<Link to="project501">page5</Link>
 </nav>
 </div>
 <div className='container'>

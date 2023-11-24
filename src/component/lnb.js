@@ -3,8 +3,6 @@ export default function Lnb(){
 // id에 넣어줬음
 // 단순 변수일뿐
 
-
-
     // var newNameArray = [...listTile];/** deep copy ...넣으면 스페이스오퍼레이터 이용 :중가로 소가로 제거 란 의미 */
     // newNameArray[0] = "스테이트 데이터 변경"
     // titleChange(newNameArray);
