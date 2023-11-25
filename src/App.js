@@ -26,7 +26,7 @@ function App() {
 
 <BrowserRouter>
 <div className='header'>
-<h1> react</h1>
+<h1> react testup</h1>
 <nav className='gnb' > 
 <Link to="/">home</Link>
 <Link to="project101">page1</Link>
