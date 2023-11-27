@@ -45,6 +45,8 @@ function App() {
   <Route path="Project201" element={<Project201/>} />
   <Route path="Project301" element={<Project301/>} />
   <Route path="Project401" element={<Project401/>} />
+  <Route path="Project501" element={<Project501/>} />
+  <Route path="Project501" element={<Project601/>} />
 </Routes>
 
 <div className='list_typ1'>
