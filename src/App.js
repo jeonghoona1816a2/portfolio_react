@@ -3,9 +3,7 @@ import './css/App.css';
 import './css/Common.css';
 import './css/Mobile.css';
 import React, { useState }from 'react';
-import Header from './component/header';
 import Lnb from './component/lnb';
-import State1 from './component/study/state1';
 import Props from './component/study/props';
 
 import Home from './100/home';
@@ -26,7 +24,7 @@ function App() {
 
 <BrowserRouter>
 <div className='header'>
-<h1> react testup</h1>
+<h1> <a>react</a> </h1>
 <nav className='gnb' > 
 <Link to="/">home</Link>
 <Link to="project101">page1</Link>
@@ -48,22 +46,6 @@ function App() {
   <Route path="Project501" element={<Project501/>} />
   <Route path="Project501" element={<Project601/>} />
 </Routes>
-
-<div className='list_typ1'>
-<div className='title'><h3>유저스테이트</h3><div className='fave'><a >👍</a><span> 링클 </span></div></div>
-<span>2023년 11월 14일</span>
-<State1></State1><State1></State1>
-</div>
-<div className='list_typ1'>
-
-<div className='title'><h3>유저스테이트</h3><div className='fave'><a >👍</a><span> 링클 </span></div></div>
-<span>2023년 11월 15일</span>
-
-<Props age={22}/>
-<Props age={50}/>
-<Props age={10}/>
-
-</div>
 </div>
 
 </div>
