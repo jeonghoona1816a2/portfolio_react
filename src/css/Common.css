@@ -25,18 +25,9 @@ button{padding: 0px;}
   font-weight: 700;
   border: 0px;}
 .btn_cm:hover{ color: #333;background: #aaa;}
-.list_typ1{     text-align: left;
-  margin: 10px 0px;
-  width: 100%;
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #333;
-  padding: 10px 0 10px 10px;
-  border-radius: 10px;
-}
+.list_typ1{     text-align: left;   margin: 10px 0px;  width: 100%;  background: #fff;  display: flex;  flex-direction: column;  border: 1px solid #333;  padding: 10px 0 10px 10px;  border-radius: 10px;}
 .list_typ1:hover{background: #ededed; border-radius: 10px;}
-.list_typ1 .title{display: flex; margin: 10px 10px 10px 0;     justify-container: space-between;}
+.list_typ1 .title{display: flex; margin: 10px 10px 10px 0; /*justify-container: space-between;*/}
 .list_typ1 .title .fave > a { cursor: pointer;   }
 .list_typ1 > div{display: flex;}
 .list_typ1 h3{margin-right: 20px; }
