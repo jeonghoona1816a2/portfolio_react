@@ -27,8 +27,8 @@ function App() {
 <h1> <a>react</a> </h1>
 <nav className='gnb' > 
 <Link to="/">home</Link>
-<Link to="project101">page1</Link>
-<Link to="project201">page2</Link>
+<Link to="project101">reactStart</Link>
+<Link to="project201">javascript</Link>
 <Link to="project301">page3</Link>
 <Link to="project401">page4</Link>
 <Link to="project501">page5</Link>
