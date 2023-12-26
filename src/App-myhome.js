@@ -29,7 +29,7 @@ function App() {
 <Link to="/">home</Link>
 <Link to="project101">reactStart</Link>
 <Link to="project201">javascript</Link>
-<Link to="project301">javaScript+jquery 정복</Link>
+<Link to="project301">page3</Link>
 <Link to="project401">page4</Link>
 <Link to="project501">page5</Link>
 </nav>

@@ -71,12 +71,180 @@ console.log(prop, arr[prop])
 
 
 }
+
+console.log("====== 2023-12-14 =======")
+
+arr = ['zero','one','two','three'];
+console.log(arr);
+delete arr[2];
+console.log(arr);
+
+
+console.log("====== 2023-12-15 =======")
+// Array() 생상자 함수로 배열 생성 유사배열 객체
+// function dayStudy1215(){
+
+let foo = new Array(3);
+console.log(foo)
+console.log(foo.length)
+let bar = new Array(1,3,3);
+console.log(bar)
+console.log(bar.length)
+console.log("====== 2023-12-15 =======")
+
+let arr2 = ['bar'];
+// 기본적이 배열 
+let obj2 = {
+name : 'foo' , length : 1 
+
+}
+console.log(arr2);
+console.log(obj2);
+arr2.push('brz','ccc')
+console.log(arr2);
+// obj.push('brz')
+console.log(obj2);
+// }
+
+
+
+// dayStudy1215()
+
+// console.log("====== 2023-12-18 =======")
+
+// function defaultTyp(){
+// let num = 0.5;
+// console.log(num.toExponetial(1));
+// console.log('test'.charAt(2));
+
+// }
+
+
+// defaultTyp();
+
+
+console.log("====== 2023-12-18 =======")
+function objPlus(){
+let add1 = 1 + 2;
+console.log(add1);
+let add2 = 'my'+ 'string';
+console.log(add2);
+let add3 = 1 + 'string';
+console.log(add3);
+let add4 = 'string' + 2;
+console.log(add4);
+let add5 = 1+1;
+console.log(typeof add5);
+
+
+}
+
+objPlus();
+
+
+
+function 연산자374(){
+    console.log("====== 2023-12-19 =======")
+if (!true){
+    console.log("!는 뭘까?")
+
+}
+else{
+    console.log("반전을 의미한다.",typeof !true) 
+
+}
+console.log(1=='1',"1=='1'");
+console.log(1==='1',"1==='1'");
+console.log("!0",!0);
+console.log(typeof !0);
+console.log("!!0",!!0);
+console.log(typeof !!0);
+console.log("!1",!1);
+console.log(typeof !1);
+console.log("!!1",!!1);
+console.log(typeof !!1);
+console.log(!0,!!0,!1,!!1);
+console.log("!!'',!!false,!!null,!!undefined,!!true,!!'string',!!{},!![]");
+console.log(!!'',!!false,!!null,!!undefined,!!true,!!'string',!!{},!![]);
+
+
+
+}
+
+연산자374();
+
+
+
+var testssss = function(a,b){
+return(a+b)
+};
+console.log(testssss(10,22));
+
+console.log(testssss2(11,22));
+function testssss2(x,y){
+    return( x+y  )
+};
+console.log(testssss2(3,4));
+
+
+
+console.log("====== 2023-12-19 -2 =======")
+
+var factroialVar = function factroial(n){
+
+if(n <= 1){
+return 1;
+}
+else {  return n * factroial(n-1); }
+
+};
+
+console.log(factroialVar(6));
+console.log(factroialVar(3));
+
+
+console.log("====== 2023-12-20 -1 =======")
+function add42(x,y){return( x + y)};
+add42.result = add42(3,2);
+add42.staus = 'ok';
+
+console.log(add42.result, add42.staus)
+if(add42.result = 5){ console.log('같네',typeof add42.result )}
+else{console.log('틀리넹')}
+if(add42.result == 5){ console.log('같네')}
+else{console.log('틀리넹')}
+if(add42.result === 5){ console.log('같네')}
+else{console.log('틀리넹')}
+
+console.log("====== 2023-12-20-2  =======")
+
+var fnc1 = function(fnc){
+fnc();
+};
+
+function conslogProgramings(){
+console.log('실행시키기 거참 어렵네 ')
+}
+fnc1(conslogProgramings);
+
+
+var fooo = function(){
+return function(){console.log('리턴값으로 실행하기')};
+
+};
+var barr = fooo(); //변수에 저장되면 fooo();로는 실행이 안됨
+barr();
+
+console.log("====== 2023-12-21  =======")
+
+function add423(x,y){
+    return x+y;
+}
+console.log(add423(3,4));
+
+console.dir(add423);
 // for (let i  in arr)
-
 // {console.log(arr[i])}
-
-
-
 // orange
 // yallow
 // green
@@ -261,6 +429,136 @@ for문은  0~ 3까지 배열 요소들만표현된다.
 
 " ></List_typ1>
         
+
+        <List_typ1 title="3.5.8~9 Array() 생성 함수 및 유사 배열 객체" day="2023-12-15" sub="
+
+
+let foo = new Array(3);<br>
+console.log(foo)<br>
+console.log(foo.length)<br>
+let bar = new Array(1,3,3);<br>
+console.log(bar)<br>
+console.log(bar.length)<br>
+Array() 생성자 함수 <br> 
+ 1개의 숫자의 경우 행당 숫자 만큼의 빈 배열 생성.<br>
+ 그외의 경우 1,3,3,3,3 호출된 안자를 요소로 같는 배열 생성<br>
+
+
+
+
+" ></List_typ1>
+
+<List_typ1 title="3.6 기본타입과 표준 매서드" day="2023-12-15" sub="
+
+예정1
+toExponential(); <br>
+charAt(); <br>
+에 대한 내용 
+
+
+" ></List_typ1>
+
+<List_typ1 title="3.7.1 + 연산자, typeof 연산자" day="2023-12-18" sub="
+
+
+function objPlus(){<br>
+let add1 = 1 + 2; <br>
+console.log(add1); <br>
+let add2 = 'my'+ 'string'; <br>
+console.log(add2); <br>
+let add3 = 1 + 'string';<br>
+console.log(add3); <br>
+let add4 = 'string' + 2; <br>
+console.log(add4); <br>
+let add5 = 1+1; <br>
+console.log(typeof add5); <br>
+숫자와 문자를 + 하면 string 문자와 문자로 합쳐진다...
+<br> console.log( typeof add5) 타입을 알려면.... 
+
+}
+
+objPlus();
+
+
+" ></List_typ1>
+
+
+<List_typ1 title="3.7.4  연산자" day="2023-12-18" sub="
+
+
+console.log(1=='1','1=='1'');<br>
+console.log(1==='1','1==='1'');<br>
+console.log('!0',!0);<br>
+console.log(typeof !0);<br>
+console.log('!!0',!!0);<br>
+console.log(typeof !!0);<br>
+console.log('!1',!1);<br>
+console.log(typeof !1);<br>
+console.log('!!1',!!1);<br>
+console.log(typeof !!1);<br>
+console.log(!0,!!0,!1,!!1);<br>
+console.log('!!'',!!false,!!null,!!undefined,!!true,!!'string',!!{},!![]');<br>
+console.log(!!'',!!false,!!null,!!undefined,!!true,!!'string',!!{},!![]);<br>
+연산자 ! 개는 반전 2개는 반전의 반전 true와 false를 구별용 
+
+
+" ></List_typ1>
+<List_typ1 title="4.1 함수 정의" day="2023- 12-19" sub="
+
+
+function . . . . . . . add(x,y).. . . .  . {retrun x+y;};<br>
+function키워드_함수명_매개변수 리스트_ 함수 몸체
+<br><br>
+4.1.2 함수 선언문 방식<br><br>
+add() 함수 선언문  <br>
+function add(x,y) { <br>
+    retrun x + y;<br>
+};<br>
+console.log(add(3,4));<br><br>
+4.1.2 함수 표현식 방식<br><br>
+
+var add = fucntion(){<br>
+retrun x + y<br>
+}<br>
+var plus = add<br>
+
+console.log(add(1,2))<br>
+console.log(plus(1,2))<br>
+
+var testssss = function(a,b){<br>
+    return(a+b) <br>
+    }; <br>
+    console.log(testssss(10,22)); <br>
+    <br>
+    console.log(testssss2(11,22)); <br>
+    function testssss2(x,y){ <br>
+        return( x+y  ) <br>
+    }; <br>
+    console.log(testssss2(3,4)); <br>
+    
+선언식으로 표현된 fuciton은 선언 이전에 실행 가능 ...
+
+
+
+" ></List_typ1>
+
+
+<List_typ1 title="4.1 함수 표현방식으로 구현한 팩토리얼 함수" day="2023-12-19" sub="
+
+
+
+" ></List_typ1>
+
+<List_typ1 title="4.2 자바스크립트에서는 함수도 객체다." day="2023-12-20" sub="
+
+
+
+
+
+" ></List_typ1>
+
+
+
 
 
 
