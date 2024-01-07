@@ -267,7 +267,7 @@
 // ddiv20240105();
 
 
-let vr2024103;
+var vr2024103;
 
 vr2024103 = {
 //  내부 함수 사용
@@ -297,15 +297,252 @@ console.log(`--------`);
 console.log((`cat` || `dog`).toString)
 }
 
+},
+
+test3(){
+
+let  trueTest =  true;
+let  consTest =  `finay`;
+
+consTest = trueTest && consTest;
+console.log(consTest);
+
+
+
+},
+test4(){
+
+let done = true;
+let done2 = false;
+let messge ;
+//주어진 조건이 ture일 때
+
+messge = done || `완료`;
+
+console.log(messge);
+
+
+},
+test5(){
+
+    let done = [true,false,NaN,undefined,null];
+    let messge ;
+    //주어진 조건이 ture일 때
+    for(var x =0; x <= done.length; x++ ){
+        console.log(`&&`,done[x] )
+        messge =done[x] && `완료`;
+    
+        console.log(typeof messge,`=`,messge);
+
+
+    };
+    console.log(`-------`);
+    for(var x =0; x <= done.length; x++ ){
+        console.log(`||`,done[x] )
+        messge = done[x] || `완료`;
+    
+        console.log(typeof messge,`=`,messge);
+
+
+    }
+    },
+    test6(){
+var elem = [true,false, undefined,null,0,-0,NaN,''];
+for(var x = 0; x <= elem.length; x++){
+    value = null;
+    var value = elem[x] && elem[x]?.value;
+    console.log(value);
+}
+    }, test7(){
+
+        let person = {
+        name : 'john'
+        ,age: 21
+        ,syhelow:()=>{ console.log(`지금은  테스트중 ${this.name}`);}
+
+        };
+
+        console.log(person);
+
+
+    },
+    test7(){
+let person = {
+Firstchaild: "johtn",
+};
+let obj = {};
+let key = `hello`;
+obj[key] = `world`;
+
+obj[person] = `world`;
+
+console.log(obj);
+
+console.log(typeof obj);
+
+    },
+    test8(){
+
+    let circle = {
+
+        radius : 5,
+        getDiameter : function(){
+        return ( 2 * this.radius);
+        }
+        };
+        
+
+      console.log(circle.getDiameter());
+    },
+
+    test9(){
+let person = {
+name : `lee`
+
+
+
+};
+console.log(person.name);
+console.log( person['name'] );
+person.age = 20;
+console.log(person);
+delete person.age ;
+console.log(person);
+
+let age = 20, name = `jehn`;
+var person2 = {name:name ,age : age } ;
+console.log(person2);
+
+let person3 = { age, name};
+console.log(person3)
+
+
+
+
+},
+ test10(){   
+
+let prefix = 'prop';
+let obj={};
+let obj2={};
+for(var i=1; i <= 10; i++){
+for(var j = 1; j <= 10; j++){
+    obj[ `id_`+Number(i+j)] = i * j;
+
+}
 }
 
+for(var g = 1; g <= 10; g++){
+    obj2[`id${g}`] = g ;
+
 }
 
+console.log(obj);
+console.log(obj2);
 
-vr2024103.test2();
+ },
+ test11(){
+
+let str = `string print`;
+
+for(var i = 0; i <= str.length; i++){
+console.log(str[i]);
+
+};
+
+str[0] = `a`;
+console.log(str[0]);
+
+
+let testNum1 = 1000;
+let testNum2 =  testNum1
+console.log(`${testNum1}|${testNum2}`)
+testNum1 = 2000;
+console.log(`${testNum1}|${testNum2}`)
+ },
+ test11(){
+ const obj = {x: {y : 1}};
+ const c1 = {... obj};
+console.log (c1 === obj) ;
+console.log (c1.x === obj.x) ;
+ },
+ test12(){
+let person = {name:`yoo`};
+
+let copy = person;
+console.log(copy === person);
+copy.name=`kim`;
+
+copy.address = `yeoju`;
+console.log(copy );
+ },
+ test13(){
+
+
+function add(x,y){
+
+return (x + y);
+
+}
+console.log(add(123,321));
+
+var add2 = { add(x,y){ return x+y } ,  add2(x,y){ return x+y }
+}
+console.log(add2.add(234,432));
+console.log(add2.add2(345,543));
 
 
 
+ },
+
+ test15(){
+
+let obj = new Function('x','y','return(x+y)');
+console.log(obj(123,321));
+// 클로저가 없음 잘안사용함 ...
+console.log(`______________`);
+
+var add = (x,y)=>x+y;
+console.log(add(123,123));
+// 화살표 함수는 this 바인딩, prototype 프로퍼티가 없으며 arguments 객체를 생성하지 않는다..
+
+var add2 = function(x,y){
+    
+    console.log(arguments);
+    
+    return x + y ;};
+var resert = add2 (222,333);
+
+console.log(resert);
+
+
+ },test16(){
+
+
+var add = function(x,y){
+
+if (typeof x !== 'number' || typeof y !== 'number' ){
+
+    throw new TypeError('숫자가 아닙니다.')
+};
+return x + y ;
+
+
+
+}
+console.log(add(432,123));
+
+console.log(add(`test`,123));
+
+
+
+
+ }
+    
+    
+}
+
+vr2024103.test16();
 
 
 
