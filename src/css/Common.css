@@ -37,3 +37,5 @@ button{padding: 0px;}
 .table_cm {border: 1px solid #ccc;}
 .table_cm td {border: 1px solid #ccc;}
 .modal{background: skyblue;margin: 10px 0px; padding: 10px 5px; height: 100px;}
+.newRact div{background-color: rgba(162, 127, 243, 10%); color:#111; padding: 20px; text-align: center;}
+.newRact h1{background-color: #333; color:#fff; padding: 40px; text-align: left;}

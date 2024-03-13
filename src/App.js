@@ -31,7 +31,7 @@ function App() {
 <Link to="project201">javascript</Link>
 <Link to="project301">javaScript+jquery 정복</Link>
 <Link to="project401">모던자바스크립트 deep dive</Link>
-<Link to="project501">page5</Link>
+<Link to="project501">초보자를위한 리엑트 200제</Link>
 </nav>
 </div>
 <div className='container'>

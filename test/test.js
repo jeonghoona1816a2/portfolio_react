@@ -267,9 +267,7 @@
 // ddiv20240105();
 
 
-var vr2024103;
-
-vr2024103 = {
+var vr2024103 = {
 //  내부 함수 사용
 test(){
 let x1= 'x';
@@ -526,7 +524,7 @@ if (typeof x !== 'number' || typeof y !== 'number' ){
     throw new TypeError('숫자가 아닙니다.')
 };
 return x + y ;
-
+tr
 
 
 }
@@ -537,13 +535,708 @@ console.log(add(`test`,123));
 
 
 
- }
-    
-    
+ },
+ test17(){
+function add(x,y,z){
+
+ x= x || 0;
+ y= y || 0;
+ z= z || 0;
+
+console.log(x+y+z);
+
+}
+add(1);
+add(1,2);
+add(1,2,4);
+add(0,1,3);
+
+
+
+ },test18(){
+
+function multiple(x,y){
+return x * y;
+}
+var result = multiple(23,32)
+console.log(result);
+
+(function foo (){ var a = 3; var b = 4; console.log(a+b); console.log(`test 다 레스고`);}());
+
+
+ },
+ test19(){
+var count = function(n){ for(var i = n; i >= 0; i-- ){ console.log(i)}}
+count(10);
+ },
+ test20(){
+
+var count = function(n){
+if (n < 0) {return (console.log(`fin num = 0`))};
+console.log(n); 
+count(n-1);
+
 }
 
-vr2024103.test16();
+count(10);
+ },test21(n){
+
+if(n === 0){ return( console.log(`start`))}
+else{ this.test21(n - 1);
+    console.log(n);    }
+
+ },test23(n) {
+    if (0 === n) {
+      console.log(`start`); // Output "start" when n is 0
+    } else {
+      this.test21(--n);
+      console.log(n); // Output n for values greater than 0
+    }
+    
+    if (n >= 0) {
+      console.log(`fin`); // Output "fin" when n is 1 (last call of test21 function)
+    }
+  }, test24(){
+
+
+function factorial(n){
+if(n <= 1){return 1}
+ return( n * factorial(n-1))
+};
+console.log(factorial(11));
+    
+  },test25(){
+
+
+console.log(`test start 중첩 함수`)
+
+function depsFirst(){
+
+let xc1 = 3;
+function subinner(){
+let yc1 = 2;
+ console.log( xc1 + yc1);  
+
+};
+subinner()
+
+
+}
+depsFirst()
+
+  },test26(){
+
+function repeat(n){
+
+
+for(var i = 0; i <= n; i++ ){
+console.log(i)
+}
+
+
+}
+
+repeat(123);
+
+  },test27(){
+
+   function repeat(n,f){
+for(var i=0; i <= n; i++ ){
+
+    f(i);
+    console.log(f);
+}
+
+   }
+
+var count = function(i){
+
+    console.log(i);
+};
+
+repeat(6,count);
 
 
 
+  },test27(){
+
+    var x = 'global x';
+    var y = 'global y';
+
+    function outter(){
+
+        var z = 'outterlocal z ';
+        console.log(x);
+        console.log(y);
+        console.log(z);
+
+        function inner(){
+
+            var x= 'inner local x';
+            console.log(x);
+            console.log(y);
+            console.log(z);
+        }
+        inner()
+
+    }
+
+    outter()
+
+    console.log(x);
+    console.log(y);
+    console.log(z);
+
+
+  },test28(){
+
+function foo(){
+
+console.log(`global function`);
+
+}
+
+function bar(){
+function foo(){
+
+console.log(`local function foo`);
+
+}
+foo();
+}
+bar();
+
+  },test29(){
+
+
+var i = 10;
+console.log(i);
+for(var i = 0; i <= 6 ; i++){
+
+  console.log(i);
+}
+console.log(i);
+
+
+  },test30(){
+
+var x = 1;
+function foo(){
+  var x = 20;
+  bar();
+  }
+
+function bar(){
+
+  console.log(x)
+}
+foo();
+bar();
+
+  },test31(){
+  console.log(`test start`)
+  let i = 10;
+    function foo(){
+    let i = 100;
+    for(let i = 0 ; i < 3; i++){
+
+    console.log(i);
+
+    }
+
+    console.log(i);
+
+    }
+    foo();
+    console.log(i);
+
+  },test32(){
+
+console.log(foo);
+let foo;
+    
+  },test33(){
+
+   {
+
+    const foo = 1 
+    console.log(foo)
+    // const foo = 2
+  };
+
+
+ 
+  },test34(){
+const person = {name:`lee`}
+person.age = 29;
+console.log(person)
+console.log(Object.getOwnPropertyDescriptors(person));
+console.log(Object.getOwnPropertyDescriptor(person,`name`));
+const o = {};
+
+// o.[[prototype]]
+o.__proto__
+
+  },test35(){
+const person = {
+firstName : 'Unigo',lastName : 'kim',
+get fullName(){
+return( `${this.firstName} ${this.lastName}`);
+},
+ set fullName(name){
+  
+  [this.firstName, this.lastName] = name.split(' ');
+
+}
+
+
+}
+
+person.fullName = `jeonghoon jeon`;
+console.log(person); 
+console.log((`jeonghoon jeon`).split(' ')); 
+
+  },test36(){
+
+const person = {};
+
+Object.defineProperty(person, `firstName`,{
+
+value:'Ungomo', writable:true, enumerable:true, configurable:true
+
+});
+
+Object.defineProperty(person, 'lastName',{ value:`lee`});
+
+let descriptor = Object.getOwnPropertyDescriptor(person, 'firstName');
+console.log(`firstName`, descriptor);
+
+descriptor = Object.getOwnPropertyDescriptor(person,`lastName`);
+console.log(`lastName`,descriptor);
+
+console.log(Object.keys(person));
+
+person.lastName = `kim`;
+delete person.lastName;
+
+descriptor = Object.getOwnPropertyDescriptor(person,`lastName`);
+console.log(`lastName`,descriptor);
+
+
+Object.defineProperty(person,`fullName`,{
+
+get(){
+
+  return `${this.firstName} | ${this.lastName}`;
+  
+},
+set(name){
+  [this.firstName, this.lastName] = name.split(` `);
+},
+enumerable:true, configurable:true
+
+});
+
+descriptor = Object.getOwnPropertyDescriptor(person, `fullName`);
+console.log(`fullName = ` ,descriptor);
+
+person.fullName = `Heegun Lee`;
+console.log(person);
+person.fullName = `Test1 You`;
+console.log(person);
+  },test37(){
+
+    const person = {};
+
+    Object.defineProperty(person,`fullName`,{
+
+      get(){
+      
+        return `${this.firstName} | ${this.lastName}`;
+      },
+      set(name){
+        [this.firstName, this.lastName] = name.split(` `);
+      },
+      enumerable:true, configurable:true
+      
+      });
+      
+      descriptor = Object.getOwnPropertyDescriptor(person, `fullName`);
+      console.log(`fullName = ` ,descriptor);
+      
+      person.fullName = `Heegun Lee`;
+      console.log(person);
+      person.fullName = `Test1 You`;
+      console.log(person);
+
+
+
+
+  },test38(){
+
+const person = {name:`jone`};
+console.log(`isExtensible: ${Object.isExtensible(person)}`);
+Object.preventExtensions(person);
+console.log(Object.isExtensible(person));
+person.age = 20 ;
+person.address = `391-1` ;
+console.log(person);
+// Object.defineProperty(person, `age`, {value : 20});
+
+  },test39(){
+const person = new Object();
+// const person2 ; 에러가 생김 
+console.log(person);
+
+person.name = `Lee` ;
+person.sayhello = function(){
+  console.log(`hi My nam is ` + this.name);
+};
+console.log(person);
+person.sayhello();
+  },test40(){
+
+const circle1 = {
+
+radius : 5, getDiameter(){
+  return (2 * this.radius);
+}
+};
+console.log(circle1.getDiameter())
+
+console.log(circle1.radius = 20, circle1.getDiameter())
+
+
+  },test41(){ 
+function Circle(radius){
+
+this.radius=radius;
+this.getDiameter = function(){
+
+  return 2* this.radius;
+} 
+}
+const circle1= new Circle(5);
+
+const circle2= new Circle(10);
+
+console.log(circle1.getDiameter());
+
+console.log(circle2.getDiameter())
+
+  },test42(){
+
+    function foo(){
+console.log(this);
+    }
+    foo();
+
+const obj = {foo};
+obj.foo();
+const inst = new foo();
+
+
+
+  },test43(){
+function foo(){}
+const bar = function(){};
+const baz = { x:function(){}};
+console.log(new foo());
+new bar();
+console.log(new bar());
+new baz.x()
+console.log(new baz.x());
+
+const arrow = ( ) =>{};
+
+// new arrow();
+// console.log(new arrow());
+const obj= {
+  x(){}
+};
+new obj.x();
+console.log(new obj.x());
+
+  },test44(){
+
+function Circle(radius){
+if(!(new.target)){
+
+  return(new Circle(radius));
+
+}
+
+this.radius = radius;
+
+this.getDiameter = function(){
+
+return( 2 * radius);
+};
+
+
+};
+
+const circle = Circle(5);
+console.log(circle.getDiameter());
+  },test45(){
+let obj = new Object();
+console.log(obj);
+obj = Object();
+console.log(obj);
+let f = new Function(`x`, `return x ** x`);
+console.log(f);
+console.log(f(2));
+
+const str = String(123);
+console.log(str);
+console.log(typeof str);
+
+
+const num = Number(123);
+console.log(num);
+console.log(typeof num);
+
+
+const bool = Boolean(1);
+console.log(bool);
+console.log(typeof bool);
+
+const bool2 = Boolean(2);
+console.log(bool2);
+console.log(typeof bool2);
+
+
+  },test46(){
+
+const increase = function(num){
+
+return  ++num ;
+
+}
+const decrease = function(num){
+
+return --num ;
+
+}
+const auxs = {increase , decrease};
+
+function makeCounter(auxs){
+
+let num = 0;
+
+return function(){
+num = auxs(num);
+return num;
+
+};
+
+}
+
+const increaser = makeCounter(auxs.increase);
+console.log(increaser());
+console.log(increaser());
+
+
+const decreaser = makeCounter(auxs.decrease);
+console.log(decreaser());
+console.log(decreaser());
+
+
+
+
+
+
+  },test47(){
+
+function square(num){
+
+return num * num ;
+
+
+}
+console.dir(square);
+console.log(Object.getOwnPropertyDescriptors(square))
+
+  },test48(){
+
+const obj = {a:1};
+console.log(obj.__proto__ === Object.prototype);
+console.log(obj,__proto__);
+
+
+  },test49(){
+
+const cicle = {
+
+radius:5,
+getDiameter(){
+return 2 * this.radius;
+
+},
+getPerimeter(){
+return 2 * Math.PI * this.radius;
+
+
+},getArea(){
+return Math.PI * this.radius ** 2
+  
+}
+
+
+
+}
+console.log(cicle);
+console.log(cicle.getDiameter());
+console.log(cicle.getPerimeter());
+console.log(cicle.getArea());
+
+
+
+
+
+
+
+  },test50(){
+function Circle(radius){
+this.radius = radius;
+this.getArea = function(){
+
+
+  return Math.PI *this.radius **2;
+};
+
+}
+const cicle1 = new Circle(1)
+const cicle2 = new Circle(2)
+
+
+console.log(cicle1.getArea())
+
+console.log(cicle2.getArea())
+
+  },test51(){
+
+function Circle(radius){
+this.radius = radius;
+
+};
+Circle.prototype.getArea = function(){
+
+return Math.PI * this.radius  ** 2;
+
+};
+const cicle1 = new Circle(1);
+const cicle2 = new Circle(2);
+
+console.log(cicle1.getArea());
+console.log(cicle2.getArea());
+  },test52(){
+    function Circle(radius){
+      this.radius = radius;
+    };
+    Circle.prototype.getArea = function(){
+
+return   Math.PI * this.radius ** 2 ;
+
+    }
+const cicle1 = new Circle(1);
+console.log(cicle1.getArea());
+
+
+
+  },test53(){
+const obj={};
+const parent = { x : 1 }
+obj.__proto__;
+console.dir(obj)
+obj.__proto__ = parent;
+console.dir(obj.x)
+
+
+  },test54(){
+
+
+function Circle(radius){
+this.radius = radius;
+this.getArea = function(){
+
+return Math.PI * this.radius ** 2;
+
+};
+
+
+}
+
+const circle1 = new Circle(1);
+const circle2 = new Circle(2);
+console.log(circle1.getArea())
+console.log(circle2.getArea())
+
+
+
+  },test55(){
+
+function Circle(radius){
+
+this.radius = radius;
+
+}
+
+Circle.prototype.getArea = function(){
+return Math.PI * this.radius ** 2;
+};
+
+const cicle1 = new Circle(1);
+const cicle2 = new Circle(3);
+
+console.log(cicle1.getArea())
+console.log(cicle2.getArea())
+
+ },test56(){
+
+
+const person = { name : `lee`};
+console.log( person.hasOwnProperty(`__proto__`) );
+console.log(Object.getOwnPropertyDescriptor(Object.prototype,`__proto__`) );
+console.log({}.__proto__ === Object.prototype);
+ },test57(){
+
+const parent = {}
+const child = {}
+
+child.__proto__ = parent;
+// parent.__proto__ = child;
+
+// TypeError: Cyclic __proto__ value
+
+
+ },test58(){
+
+const obj = new Object();
+console.log(obj.constructor);
+console.log(obj.constructor === Object);
+const add = new Function('a','b','return a + b');
+console.log( Function);
+
+console.log(add.constructor === Function);
+
+function Person(name){
+  this.name = name;
+}
+   const me = new Person(`lee`);
+   console.log(me.constructor === Person);
+
+
+ }
+
+       
+}
+
+
+var keys = Object.keys(vr2024103); 
+var lastFunctionName = keys[keys.length - 1];
+vr2024103[lastFunctionName]();
+
+
+// Object.values(vr2024103).pop()();
 
