@@ -15,7 +15,6 @@ render(){
 }
 
 
-
 }
 
 export default R023_PropNode;
