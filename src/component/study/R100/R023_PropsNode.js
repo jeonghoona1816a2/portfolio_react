@@ -6,15 +6,28 @@ import React,{Component} from "react";
 class R023_PropNode extends Component{
 
 render(){
+return(
+<div style={{padding:'10px'}}>
+   <span>1.</span> {this.props.children}<span> fin</span>
+   {this.props.children}
+</div>
 
-
-
-// return();
-
-
+);
 }
 
-
+  
 }
+// function childcomponent(props) {
+// return(
+//     <div>{props.children}</div>
+// )
+// }
+// function ChildComponent(props) {
+//   return (
+//     <div>
+//       {props.children}
+//     </div>
+//   );
+// }
 
 export default R023_PropNode;

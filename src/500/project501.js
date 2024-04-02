@@ -12,24 +12,43 @@
 // import ArrowFunction from "../component/study/R013_ArrowFunction"
 // 반드시 import 는 대문자로 !!!!!!!
 // import ForEach from"../component/study/R014_ForEach";
-import R015_Map from'../component/study/R100/R015_Map';
-import R016_Jquery from '../component/study/R100/R016_Jquery';
-import R017_props from '../component/study/R100/R017_props';
-import PropDatatype from '../component/study/R100/R018_propsDatatype';
-import PropsBoolean from '../component/study/R100/R019_PropsBoolean';
-import R020_PropsObjVal from '../component/study/R100/R020_PropsObjVal';
-import PropsRequired from '../component/study/R100/R021_PropsRequired';
-import PropDefault from '../component/study/R100/R022_PropsDefault ';
-import PropNode from '../component/study/R100/R023_PropsNode';
+// import R015_Map from'../component/study/R100/R015_Map';
+// import R016_Jquery from '../component/study/R100/R016_Jquery';
+// import R017_props from '../component/study/R100/R017_props';
+// import PropDatatype from '../component/study/R100/R018_propsDatatype';
+// import PropsBoolean from '../component/study/R100/R019_PropsBoolean';
+// import R020_PropsObjVal from '../component/study/R100/R020_PropsObjVal';
+// import PropsRequired from '../component/study/R100/R021_PropsRequired';
+// import PropDefault from '../component/study/R100/R022_PropsDefault ';
+// import PropNode from '../component/study/R100/R023_PropsNode';
+// import SetState from '../component/study/R100/R025_SetState';
+// import ForceUpdate from '../component/study/R100/R026_ForceUpdate';
+// import ComponetClass from '../component/study/R100/R027_ComponetClass';
+// import PureComponentClass from '../component/study/R100/R028_PureComponentClass';
+
+// import ShallowEqual from '../component/study/R100/R029_ShallowEqual';
+// import FuntionComponent from '../component/study/R100/R030_FunctionComponent';
+// import ReactHook from '../component/study/R100/R031_ReactHook';
+// import Fragements from '../component/study/R100/R032_Fragments';
+// import RetrunMap from '../component/study/R100/R033_ReturnMap';
+// import ReactStrapAlerts from '../component/study/R100/R034_ReactStrapAlerts';
+// import ReactstrapBadges from '../component/study/R100/R035_ReactstrapBadges';
+// import ReactstrapBreadcrumbs  from '../component/study/R100/R036_ReactstrapBreadcrumbs';
+import ReactstrapDropdown from '../component/study/R100/R037_ReactstrapDropdown';
+import ReacstrapButtonGroup from '../component/study/R100/R038_ReactstrapButtonGroup';
+import ReactstrapButton from '../component/study/R100/R039_ReactstrapButton';
+import ReactstrapCard from '../component/study/R100/R040_ReactstrapCard';
+import ReactstrapCarousel from '../component/study/R100/R041_Reactstrapcarousel';
+
 
 
 export default function ProJect501(){
     return(
     <div className="newRact">
-    <R015_Map/>
+    {/* <R015_Map/>
     <R016_Jquery/>
-    <R017_props props_val="This is props"/>
-    <div>
+    <R017_props props_val="This is props"/> */}
+    {/* <div>
             <h1>start react 200!</h1>
             <p>css 적용기</p>
             <PropDatatype String = "react" Number={200} Boolean = {1==1} Array = {[0,1,8]} ObjectJson = {{react:"리액트",twohundred:"200"}} Function={console.log('FunctionProps : function')} />     
@@ -48,7 +67,9 @@ export default function ProJect501(){
 </div>
 
 <div><PropsRequired ReactNumber = {200}/></div>
-<div><PropDefault ReactNumber ={200}/> </div>
+<div><PropDefault ReactNumber ={200}/> </div> */}
+
+
 {/* <ForEach/> */}
 {/* <R003_ImportComponent>test</R003_ImportComponent> */}
 {/* <List_typ1 title="component 사용" day="2024-02-09" sub="
@@ -113,10 +134,30 @@ import 이름작성 from '주소로 '
 
 {/* </div> */}
 
+{/* <div> <PropNode><div>node from App.js</div><div>node from App.js</div></PropNode> </div>
 
+<div><SetState></SetState></div>
+<div>
+<div> css 적용하기 <br/> <ForceUpdate/></div>
+</div> */}
 
-    </div>
-    
+{/* <div>ComponetClass <ComponetClass></ComponetClass></div> */}
+{/* <div><PureComponentClass></PureComponentClass></div> */}
+{/* <div><ShallowEqual /></div>
+<div><FuntionComponent contents='this is FunctionComponent'/></div>
+<div><ReactHook/></div>
+<div><Fragements/></div>
+<div><RetrunMap/></div>
+<div><ReactStrapAlerts></ReactStrapAlerts></div>
+<div><ReactstrapBadges/></div>
+<ReactstrapBreadcrumbs></ReactstrapBreadcrumbs> */}
+<ReactstrapDropdown ></ReactstrapDropdown>
+<div><ReacstrapButtonGroup></ReacstrapButtonGroup></div>
+<div><ReactstrapButton></ReactstrapButton></div>
+<div><ReactstrapCard></ReactstrapCard></div>
+<div><ReactstrapCarousel></ReactstrapCarousel></div>
+</div>
+
     );
     
     };
