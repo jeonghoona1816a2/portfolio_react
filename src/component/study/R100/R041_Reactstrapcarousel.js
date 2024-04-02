@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 import { UncontrolledCarousel } from "reactstrap";
-import BackImg from '/Users/a1816/OneDrive/문서/react_project/mynewwebproject/src/images/imarges.jpg'
+import BackImg from '../../../images/imarges.jpg'
 const items = [
 
     {

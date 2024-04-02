@@ -1,6 +1,6 @@
 import React,{Component} from "react";
 import { Button, ButtonGroup, Card, CardBody, CardImg, CardSubtitle, CardText, CardTitle } from "reactstrap";
-import BackImg from '/Users/a1816/OneDrive/문서/react_project/mynewwebproject/src/images/imarges.jpg'
+import BackImg from '../../../images/imarges.jpg'
 // C:\Users\a1816\OneDrive\문서\react_project\mynewwebproject\src\images
 class R040_ReactstrapCard extends Component{
 
