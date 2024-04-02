@@ -46,6 +46,9 @@ import ReactstrapFrom from '../component/study/R100/R044_ReactstrapForm';
 import ReactstrapinputGroup from '../component/study/R100/R045_ReactstrapInputGroup';
 import ReactstrapListGroup from '../component/study/R100/R047_ReactstrapListGroup';
 import ReactstrapModal from '../component/study/R100/R048_ReactstrapModal';
+import ReactstrapNavbar from '../component/study/R100/R049_ReactstrapNavbar'; 
+import ReactstrapPagination from '../component/study/R100/R050_ReactstrapPagination';
+import ReactstrapPopover from '../component/study/R100/R051_ReactstrapPopover';
 export default function ProJect501(){
     return(
     <div className="newRact">
@@ -155,6 +158,7 @@ import 이름작성 from '주소로 '
 <div><ReactStrapAlerts></ReactStrapAlerts></div>
 <div><ReactstrapBadges/></div>
 <ReactstrapBreadcrumbs></ReactstrapBreadcrumbs> */}
+ <div><ReactstrapNavbar></ReactstrapNavbar></div>
 <div><ReactstrapDropdown ></ReactstrapDropdown></div>
 <div><ReacstrapButtonGroup></ReacstrapButtonGroup></div>
 <div><ReactstrapButton></ReactstrapButton></div>
@@ -166,6 +170,8 @@ import 이름작성 from '주소로 '
  <div><ReactstrapinputGroup></ReactstrapinputGroup></div>
  <dimv><ReactstrapListGroup></ReactstrapListGroup></dimv>
  <div><ReactstrapModal></ReactstrapModal></div>
+<div><ReactstrapPagination></ReactstrapPagination></div>
+<div><ReactstrapPopover></ReactstrapPopover></div>
 </div>
 
     ); 

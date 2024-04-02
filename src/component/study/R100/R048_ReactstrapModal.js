@@ -14,9 +14,9 @@ toggle = () =>{this.setState({modal:!this.state.modal})}
         return(
             <>
                 <Button onClick={this.toggle}>버튼</Button>
-                <Modal isOpen={this.state.modal}>
+                <Modal isOpen={this.state.modal} fade={true} toggle={this.toggle}>
 
-                    <ModalHeader>
+                    <ModalHeader toggle={this.toggle} Modal Header>
                         ModalHeader
                     </ModalHeader>
                     <ModalBody>
