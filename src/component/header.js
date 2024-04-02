@@ -15,6 +15,7 @@ return(
 <Link to="project301">page3</Link>
 <Link to="project401">page4</Link>
 <Link to="project501">page5</Link>
+<Link to="project601">page6</Link>
 </nav>
 
 {/* <div className='gnb'><ul> {dummy.menu.map( name=> ( <li> {name.name} </li>  ))}</ul></div> */}

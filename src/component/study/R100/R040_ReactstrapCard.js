@@ -4,8 +4,6 @@ import BackImg from '/Users/a1816/OneDrive/문서/react_project/mynewwebproject/
 // C:\Users\a1816\OneDrive\문서\react_project\mynewwebproject\src\images
 class R040_ReactstrapCard extends Component{
 
-
-
 render(){
 
     return(

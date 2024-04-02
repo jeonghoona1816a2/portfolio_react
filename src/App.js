@@ -31,7 +31,8 @@ function App() {
 <Link to="project201">javascript</Link>
 <Link to="project301">javaScript+jquery 정복</Link>
 <Link to="project401">모던자바스크립트 deep dive</Link>
-<Link to="project501">초보자를위한 리엑트 200제</Link>
+<Link to="project501">초보자를위한 리엑트 100제</Link>
+<Link to="project601">초보자를위한 리엑트 200제</Link>
 </nav>
 </div>
 <div className='container'>
@@ -44,7 +45,8 @@ function App() {
   <Route path="Project301" element={<Project301/>} />
   <Route path="Project401" element={<Project401/>} />
   <Route path="Project501" element={<Project501/>} />
-  <Route path="Project501" element={<Project601/>} />
+  <Route path="Project601" element={<Project601/>} />
+  
 </Routes>
 </div>
 

@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.css'
 // import List_typ1 from "../component/study/listtype";// PascalCase로 수정
 // import R003_ImportComponent from "../component/study/R003_ImportComponent";
 // import LifecycleEx from '../component/study/R004_lifecycleEx';
@@ -39,9 +40,12 @@ import ReacstrapButtonGroup from '../component/study/R100/R038_ReactstrapButtonG
 import ReactstrapButton from '../component/study/R100/R039_ReactstrapButton';
 import ReactstrapCard from '../component/study/R100/R040_ReactstrapCard';
 import ReactstrapCarousel from '../component/study/R100/R041_Reactstrapcarousel';
-
-
-
+import ReactstrapCollapse from '../component/study/R100/R042_ReactstrapCollapse';
+import Reactstrapfade from '../component/study/R100/R043_ReactstrapFade';
+import ReactstrapFrom from '../component/study/R100/R044_ReactstrapForm';
+import ReactstrapinputGroup from '../component/study/R100/R045_ReactstrapInputGroup';
+import ReactstrapListGroup from '../component/study/R100/R047_ReactstrapListGroup';
+import ReactstrapModal from '../component/study/R100/R048_ReactstrapModal';
 export default function ProJect501(){
     return(
     <div className="newRact">
@@ -151,13 +155,18 @@ import 이름작성 from '주소로 '
 <div><ReactStrapAlerts></ReactStrapAlerts></div>
 <div><ReactstrapBadges/></div>
 <ReactstrapBreadcrumbs></ReactstrapBreadcrumbs> */}
-<ReactstrapDropdown ></ReactstrapDropdown>
+<div><ReactstrapDropdown ></ReactstrapDropdown></div>
 <div><ReacstrapButtonGroup></ReacstrapButtonGroup></div>
 <div><ReactstrapButton></ReactstrapButton></div>
 <div><ReactstrapCard></ReactstrapCard></div>
 <div><ReactstrapCarousel></ReactstrapCarousel></div>
+<div><ReactstrapCollapse></ReactstrapCollapse></div>
+<div><Reactstrapfade></Reactstrapfade></div>
+<div style={{margin:'0 0 20xp 0'}}><ReactstrapFrom /></div>
+ <div><ReactstrapinputGroup></ReactstrapinputGroup></div>
+ <dimv><ReactstrapListGroup></ReactstrapListGroup></dimv>
+ <div><ReactstrapModal></ReactstrapModal></div>
 </div>
 
-    );
-    
+    ); 
     };
