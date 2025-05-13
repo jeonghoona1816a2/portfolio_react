@@ -24,7 +24,7 @@ function App() {
 
 <BrowserRouter>
 <div className='header'>
-<h1> <a>react</a> </h1>
+<h1> <a>전정훈 포트폴리오 </a> </h1>
 <nav className='gnb' > 
 <Link to="/">home</Link>
 <Link to="project101">reactStart</Link>
