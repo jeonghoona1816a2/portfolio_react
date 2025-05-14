@@ -4,8 +4,6 @@ import './css/Common.css';
 import './css/Mobile.css';
 import React, { useState }from 'react';
 import Lnb from './component/lnb';
-import Props from './component/study/props';
-
 import Home from './100/home';
 import Project101 from './100/project101';
 import Project201 from './200/project201';
