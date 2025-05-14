@@ -19,10 +19,9 @@ function App() {
 <div className="App">
 
 <div className='warp'>
-
 {/* <BrowserRouter> */}
 <div className='header'>
-<h1> <a>전정훈 포트폴리오 </a> </h1>
+<h1> <a>전정훈 포트폴리오 준비중 </a> </h1> 
 {/* <nav className='gnb' > 
 <Link to="/">home</Link>
 <Link to="project101">reactStart</Link>
@@ -44,9 +43,9 @@ function App() {
   <Route path="Project401" element={<Project401/>} />
   <Route path="Project501" element={<Project501/>} />
   <Route path="Project601" element={<Project601/>} />
-  
 </Routes> */}
-<div><h2> 업데이트 및 정비중 입니다. </h2></div>
+
+
 </div>
 
 </div>
