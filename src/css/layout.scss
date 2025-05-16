@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+/**
+ * <pre>
+ * PSP layout CSS
+ * </pre>
+ *
+ * @see
+ * <pre>
+ * ============= ============ ==========================
+ *  Date          Author       Description
+ * ------------- ------------ --------------------------
+ *  2025.04.11.   전정훈        [NELS]최초생성
+ * ============= ============ ==========================
+ * </pre>
+ */
+
+
+
+ /* 기본 CSS 변수 설정 */
+:root {
+  --font-family-base: 'Noto Sans KR', sans-serif;
+  --font-size-base: 14px;
+  --line-height-base: 1.5;
+  --mainmune-hover-bg:#FF7143;
+  --color-bg: #ffffff;
+  --color-bg1:#F1F7FA;
+  --color-sidebar-bg: #2d3439;
+  --color-text: #333333;
+  --color-primary: #007bff;
+  --color-secondary: #6c757d;
+  --color-border: #dee2e6;
+  --spacing-base: 8px;
+  // --skill-image1:url(../src/images/ai_logo.png)
+  --skill-image-ai:     url('../images/ai_logo.png');
+  --skill-image-andst:    url('../images/and_st.png');
+  --skill-image-css:    url('../images/css_logo.png');
+  --skill-image-js:     url('../images/js_logo.png');
+  --skill-image-react:  url('../images/react_logo.png');
+  --skill-image-sass:   url('../images/Sass_Logo.png');
+  --skill-image-figma:  url('../images/figma_logo.png');
+  --skill-image-html5:  url('../images/html5_logo.png');
+  --skill-image-git:    url('../images/git_logo.png');
+  --skill-image-w3c:    url('../images/w3c_logo.png');
+  --skill-image-ws:     url('../images/ws_logo.png');
+  --skill-image-xd:    url('../images/xd_logo.png');
+}
+
+/* 박스 모델 초기화 */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+div { box-sizing: border-box; }
+
+/* 기본 레이아웃 및 타이포그래피 */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  background-color: var(--color-bg1);
+  color: var(--color-text);
+}
+
+h1 { font-size: 2em; margin: 0; padding: 0; }
+h2 { font-size: 1.75em; margin: 0; padding: 0; }
+h3 { font-size: 1.5em; margin: var(--spacing-base) 0; padding: 0; }
+p { margin: var(--spacing-base) 0; }
+
+/* 링크 */
+a { color: var(--color-primary); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* 앱 레이아웃 */
+.App { display: flex; min-height: 100vh; min-width: 1280px; }
+
+/* 메인 영역 */
+.main { flex: 1; display: flex; flex-direction: column;  margin:30px 30px 30px 0;  border-radius: 0 0 30px 0; background-color: var(--color-bg1); }
+
+// .header { background-color: #fff; padding: var(--spacing-base) calc(var(--spacing-base) * 2); border-bottom: 1px solid var(--color-border);  border-radius: 0 30px 0 0; height: 90px; }
+
+// /* 테이블 컴포넌트 */
+// .table-component { width: 100%; border-collapse: collapse; }
+// .table-component th,
+// .table-component td { padding: var(--spacing-base); border: 1px solid var(--color-border); text-align: left; }
+// .table-component th { background-color: var(--color-secondary); color: #fff; }
+// .table-component tbody tr:nth-child(even) { background-color: #f8f9fa; }
+
+// /* 페이지네이션 */
+// .pagination-component { display: flex; list-style: none; padding: 0; margin: var(--spacing-base) 0; }
+// .page-button { border: none; background-color: var(--color-secondary); color: #fff; padding: var(--spacing-base); margin-right: var(--spacing-base); cursor: pointer; }
+// .page-button.active { background-color: var(--color-primary); }
+
+/* 푸터 */
+.footer { padding: var(--spacing-base); border-top: 1px solid var(--color-border); text-align: center; }

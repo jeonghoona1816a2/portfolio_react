@@ -1,0 +1,9 @@
+// components/layout/Sidebar/Sidebar.module.scss
+.sidebar {
+  background-color: var(--color-sidebar-bg);
+  color: #fff;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-base);
+}

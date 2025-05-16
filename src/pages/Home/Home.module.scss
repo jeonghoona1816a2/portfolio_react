@@ -1,0 +1,28 @@
+.skills_list{display: flex; flex-direction: row;}
+.skill_item{width: 30px; height: 30px; background-color: aliceblue; }
+.skill_item:nth-child(1)  { background-image: var(--skill-image-ai); }
+.skill_item:nth-child(2)  { background-image: var(--skill-image-andst); }
+.skill_item:nth-child(3)  { background-image: var(--skill-image-css); }
+.skill_item:nth-child(4)  { background-image: var(--skill-image-js); }
+.skill_item:nth-child(5)  { background-image: var(--skill-image-react); }
+.skill_item:nth-child(6)  { background-image: var(--skill-image-sass); }
+.skill_item:nth-child(7)  { background-image: var(--skill-image-figma); }
+.skill_item:nth-child(8)  { background-image: var(--skill-image-html5); }
+.skill_item:nth-child(9)  { background-image: var(--skill-image-git); }
+.skill_item:nth-child(10) { background-image: var(--skill-image-w3c); }
+.skill_item:nth-child(11) { background-image: var(--skill-image-ws); }
+.skill_item:nth-child(12) { background-image: var(--skill-image-xd); }
+
+
+//   --skill-image-ai:     url('../images/ai_logo.png');
+//   --skill-image-andst:    url('../images/and_st.png');
+//   --skill-image-css:    url('../images/css_logo.png');
+//   --skill-image-js:     url('../images/js_logo.png');
+//   --skill-image-react:  url('../images/react_logo.png');
+//   --skill-image-sass:   url('../images/Sass_Logo.png');
+//   --skill-image-figma:  url('../images/figma_logo.png');
+//   --skill-image-html5:  url('../images/html5_logo.png');
+//   --skill-image-git:    url('../images/git_logo.png');
+//   --skill-image-w3c:    url('../images/w3c_logo.png');
+//   --skill-image-ws:     url('../images/ws_logo.png');
+//   --skill-image-xd:    url('../images/xd_logo.png');
