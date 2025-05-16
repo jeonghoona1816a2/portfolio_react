@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../Home/Home.module.scss'
 
 export default function Home() {
+  const skills = Array.from({ length: 12 }, (_, i) => i + 1);
   return (
     <section>
       {/* <h2>Home</h2>
@@ -22,18 +23,13 @@ export default function Home() {
                </p>
              </section>
 
-             <section>
+             <section className={styles.skills_list}>
                <h3>Skills</h3>
-               <div className= {styles.skills_list}>
-                 <div className="skill_item">1</div>
-                 <div className="skill_item">2</div>
-                 <div className="skill_item">3</div>
-                 <div className="skill_item">4</div>
-                 <div className="skill_item">5</div>
-                 <div className="skill_item">6</div>
-                 <div className="skill_item">7</div>
-                 <div className="skill_item">8</div>
-               </div>
+                  {skills.map((num) => (
+                          <div key={num} className={styles.skill_item}>
+                            {/*num*/}
+                          </div>
+                        ))}
              </section>
 
              <section>

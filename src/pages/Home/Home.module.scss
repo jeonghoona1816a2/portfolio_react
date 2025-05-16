@@ -1,5 +1,6 @@
 .skills_list{display: flex; flex-direction: row;}
 .skill_item{width: 30px; height: 30px; background-color: aliceblue; }
+
 .skill_item:nth-child(1)  { background-image: var(--skill-image-ai); }
 .skill_item:nth-child(2)  { background-image: var(--skill-image-andst); }
 .skill_item:nth-child(3)  { background-image: var(--skill-image-css); }
