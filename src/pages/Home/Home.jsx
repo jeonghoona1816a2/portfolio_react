@@ -1,9 +1,13 @@
 import React from 'react';
-import styles from '../Home/Home.module.scss'
+import styles from '../Home/Home.module.scss';
+import projects from '../../component/data/projects.json';//데이터
+
 
 export default function Home() {
-  const skills = Array.from({ length: 12 }, (_, i) => i + 1);
-  const projcts = Array.from({ length: 4 }, (_, i) => i + 1);
+   const skills = Array.from({ length: 12 }, (_, i) => i + 1);
+  // const projcts = Array.from({ length: 4 }, (_, i) => i + 1);
+
+
   return (
     <section>
       {/* <h2>Home</h2>
@@ -33,24 +37,34 @@ export default function Home() {
                           </div>
                         ))}
                </div>
-           
              </section>
 
              <section>
                <h4>Projects</h4>
-               <div className={styles.projects_list}>
-                  {projcts.map((num) => (
-                          <div key={num} className={styles.project_item}>
-                           <div className={styles.project_skill_list}>                           
-                            <div className={styles.project_skill} style={{ backgroundImage: 'var(--skill-image-js)', backgroundRepeat: 'no-repeat',  backgroundSize: 'cover',  backgroundPosition: 'center', }}></div>
-                            <div className={styles.project_skill} style={{ backgroundImage: 'var(--skill-image-ai)', backgroundRepeat: 'no-repeat',  backgroundSize: 'cover',  backgroundPosition: 'center', }}></div>
-                           </div>
-                            {/*num*/}<h3>title {num}</h3>
-                            <span>subscirption {num}</span>
-                          </div>
-                        ))}
-
-               </div>
+   
+            <div className={styles.projects_list}>
+              {projects.map(({ id, title, description, skills }) => (
+                <div key={id} className={styles.project_item}>
+                  <div className={styles.project_skill_list}>
+                    {skills.map((skillKey) => (
+                      <div
+                        key={skillKey}
+                        className={styles.project_skill}
+                        style={{
+                          backgroundImage: `var(--skill-image-${skillKey})`,
+                          backgroundRepeat: 'no-repeat',
+                          backgroundSize:   'contain',
+                          backgroundPosition: 'center'
+                        }}
+                      />
+                    ))}
+                  </div>
+                  <h3>{title}</h3>
+                  <p>{description}</p>
+                </div>
+              ))}
+              </div>   
+            
              </section>
            </div>
          </div>

@@ -1,0 +1,29 @@
+
+[
+  {
+    "id": 1,
+    "title": "프로젝트 1",
+    "description": "첫 번째 프로젝트 설명입니다.",
+    "skills": ["js","ai"]
+  },
+  {
+    "id": 2,
+    "title": "프로젝트 2",
+    "description": "두 번째 프로젝트 설명입니다.",
+    "skills": ["css","react"]
+  },
+  {
+    "id": 3,
+    "title": "프로젝트 3",
+    "description": "세 번째 프로젝트 설명입니다.",
+    "skills": ["html5","git"]
+  },
+    {
+    "id": 4,
+    "title": "프로젝트 3",
+    "description": "세 번째 프로젝트 설명입니다.",
+    "skills": ["html5","git"]
+  }
+
+
+]
