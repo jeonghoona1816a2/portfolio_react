@@ -1,7 +1,6 @@
 // src/App.js
 import React, { useState } from 'react';
 import './css/App.css';
-import './css/Common.css';
 import './css/Mobile.css';
 import './css/layout.scss';
 
