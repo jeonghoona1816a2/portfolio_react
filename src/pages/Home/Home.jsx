@@ -3,6 +3,7 @@ import styles from '../Home/Home.module.scss'
 
 export default function Home() {
   const skills = Array.from({ length: 12 }, (_, i) => i + 1);
+  const projcts = Array.from({ length: 4 }, (_, i) => i + 1);
   return (
     <section>
       {/* <h2>Home</h2>
@@ -23,22 +24,32 @@ export default function Home() {
                </p>
              </section>
 
-             <section className={styles.skills_list}>
-               <h3>Skills</h3>
-                  {skills.map((num) => (
+             <section >
+               <h4>Skills</h4>
+               <div className={styles.skills_list}>
+                 {skills.map((num) => (
                           <div key={num} className={styles.skill_item}>
                             {/*num*/}
                           </div>
                         ))}
+               </div>
+           
              </section>
 
              <section>
-               <h3>Projects</h3>
-               <div className="projects_list">
-                 <div className="project_item">1</div>
-                 <div className="project_item">2</div>
-                 <div className="project_item">3</div>
-                 <div className="project_item">4</div>
+               <h4>Projects</h4>
+               <div className={styles.projects_list}>
+                  {projcts.map((num) => (
+                          <div key={num} className={styles.project_item}>
+                           <div className={styles.project_skill_list}>                           
+                            <div className={styles.project_skill} style={{ backgroundImage: 'var(--skill-image-js)', backgroundRepeat: 'no-repeat',  backgroundSize: 'cover',  backgroundPosition: 'center', }}></div>
+                            <div className={styles.project_skill} style={{ backgroundImage: 'var(--skill-image-ai)', backgroundRepeat: 'no-repeat',  backgroundSize: 'cover',  backgroundPosition: 'center', }}></div>
+                           </div>
+                            {/*num*/}<h3>title {num}</h3>
+                            <span>subscirption {num}</span>
+                          </div>
+                        ))}
+
                </div>
              </section>
            </div>

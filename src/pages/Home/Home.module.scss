@@ -1,20 +1,23 @@
-.skills_list{display: flex; flex-direction: row;}
+.skills_list{display: flex; flex-direction: row; background-color: var(--color-bg2); height: 74px;    align-items: center; border-radius: var(  --radius-content);    justify-content: space-evenly;}
 .skill_item{width: 30px; height: 30px; background-color: aliceblue; }
 
-.skill_item:nth-child(1)  { background-image: var(--skill-image-ai); }
-.skill_item:nth-child(2)  { background-image: var(--skill-image-andst); }
+.skill_item:nth-child(1)  { background-image: var(--skill-image-ai);  height:29px ;}
+.skill_item:nth-child(2)  { background-image: var(--skill-image-andst);  }
 .skill_item:nth-child(3)  { background-image: var(--skill-image-css); }
 .skill_item:nth-child(4)  { background-image: var(--skill-image-js); }
-.skill_item:nth-child(5)  { background-image: var(--skill-image-react); }
-.skill_item:nth-child(6)  { background-image: var(--skill-image-sass); }
-.skill_item:nth-child(7)  { background-image: var(--skill-image-figma); }
+.skill_item:nth-child(5)  { background-image: var(--skill-image-react);  height: 29px; }
+.skill_item:nth-child(6)  { background-image: var(--skill-image-sass);  height: 23px; }
+.skill_item:nth-child(7)  { background-image: var(--skill-image-figma);  width: 20px; }
 .skill_item:nth-child(8)  { background-image: var(--skill-image-html5); }
 .skill_item:nth-child(9)  { background-image: var(--skill-image-git); }
-.skill_item:nth-child(10) { background-image: var(--skill-image-w3c); }
-.skill_item:nth-child(11) { background-image: var(--skill-image-ws); }
-.skill_item:nth-child(12) { background-image: var(--skill-image-xd); }
+.skill_item:nth-child(10) { background-image: var(--skill-image-w3c); height:22px ; }
+.skill_item:nth-child(11) { background-image: var(--skill-image-ws);  height:22px ; }
+.skill_item:nth-child(12) { background-image: var(--skill-image-xd); height:29px ; }
 
-
+.projects_list{display: flex; flex-direction: row; background-color: var(--color-bg);     height: 370px;   align-items: center;    justify-content: space-evenly;}
+.project_item {width: 280px; height: 280px; background-color: var(--color-bg2); border-radius: var(  --radius-content);  }
+.project_skill_list{ display: flex; flex-direction: row; align-items: center;    justify-content: flex-start;}
+.project_skill{width: 30px; height: 30px; }
 //   --skill-image-ai:     url('../images/ai_logo.png');
 //   --skill-image-andst:    url('../images/and_st.png');
 //   --skill-image-css:    url('../images/css_logo.png');

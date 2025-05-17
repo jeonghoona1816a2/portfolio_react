@@ -19,16 +19,21 @@
 :root {
   --font-family-base: 'Noto Sans KR', sans-serif;
   --font-size-base: 14px;
+  --font-subtitle:22px;
   --line-height-base: 1.5;
   --mainmune-hover-bg:#FF7143;
   --color-bg: #ffffff;
   --color-bg1:#F1F7FA;
+  --color-bg2:#FAFAFA;
   --color-sidebar-bg: #2d3439;
   --color-text: #333333;
   --color-primary: #007bff;
   --color-secondary: #6c757d;
   --color-border: #dee2e6;
   --spacing-base: 8px;
+  --radius-content: 20px;
+
+
   // --skill-image1:url(../src/images/ai_logo.png)
   --skill-image-ai:     url('../images/ai_logo.png');
   --skill-image-andst:    url('../images/and_st.png');
@@ -42,6 +47,7 @@
   --skill-image-w3c:    url('../images/w3c_logo.png');
   --skill-image-ws:     url('../images/ws_logo.png');
   --skill-image-xd:    url('../images/xd_logo.png');
+
 }
 
 /* 박스 모델 초기화 */
