@@ -7,7 +7,7 @@ import './css/layout.scss';
 import Sidebar from './component/layout/Sidebar';
 import Header from './component/layout/Header';
 import Content from './component/layout/Content';
-
+import Footer from './component/layout/Footer';
 
 function App() {
     const [showModal, setShowModal] = useState(true);
@@ -44,7 +44,7 @@ function App() {
         {/* Header에 title prop을 넣어주면 동적으로 변경 가능 */}
         <Header title="대시보드" />
         <Content/>
-        <div className="footer">내용</div>
+        <Footer/>
       </div>
 
     </div>

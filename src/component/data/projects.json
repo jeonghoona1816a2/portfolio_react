@@ -1,29 +1,86 @@
-
 [
   {
     "id": 1,
-    "title": "프로젝트 1",
-    "description": "첫 번째 프로젝트 설명입니다.",
-    "skills": ["js","ai"]
+    "title": "대법원 차세대 UI/UX 프리랜서",
+    "description": "전자소송포털, 전자공탁, 재판조력자 선발 등 8개 PC 웹사이트 및 3개 모바일 화면의 UI/UX 디자인과 퍼블리싱을 수행하고, 공통 컴포넌트 가이드를 제공하여 유지보수를 용이하게 했습니다.",
+       "skills": ["js", "ai"]
   },
   {
     "id": 2,
-    "title": "프로젝트 2",
-    "description": "두 번째 프로젝트 설명입니다.",
-    "skills": ["css","react"]
+    "title": "SK하이닉스 내부 파일 승인 포털",
+    "description": "하이닉스 내부 파일 승인 업무 포털의 디자인 및 퍼블리싱을 담당하여, 반응형 웹 구현과 크로스 브라우징·웹접근성 최적화를 수행했습니다.",
+ "skills": ["js", "ai"]
   },
   {
     "id": 3,
-    "title": "프로젝트 3",
-    "description": "세 번째 프로젝트 설명입니다.",
-    "skills": ["html5","git"]
+    "title": "제이엔제이 웹 디자인 및 퍼블리싱",
+    "description": "제이엔제이 디자인사업부 프리랜서로 웹사이트 기획부터 디자인·퍼블리싱, 일러스트 작업까지 수행하며, React 기반 UI 설계도 병행했습니다.",
+ "skills": ["js", "ai"]
   },
-    {
+  {
     "id": 4,
-    "title": "프로젝트 3",
-    "description": "세 번째 프로젝트 설명입니다.",
-    "skills": ["html5","git"]
+    "title": "이프론비즈 웹 개발 및 퍼블리싱",
+    "description": "도소매 쇼핑몰 홈페이지의 UI/UX 설계·구현과 퍼블리싱, 크로스 브라우징 대응 및 웹접근성 준수를 통해 사용자 경험을 개선했습니다.",
+ "skills": ["js", "ai"]
+  },
+  {
+    "id": 5,
+    "title": "야구파크 홈페이지 제작 및 운영",
+    "description": "www.yagopark.com 홈페이지 기획·제작·운영 관리, UI/UX 개선 및 반응형 웹 구현, 콘텐츠·마케팅 전략을 총괄했습니다.",
+ "skills": ["js", "ai"]
+  },
+  {
+    "id": 6,
+    "title": "텐바이크 창업 및 운영",
+    "description": "서울시 청년창업 지원사업 선정 후 텐바이크 브랜드를 창업·운영하며, 상세페이지 디자인·홈페이지 제작, 콘텐츠 기획 및 마케팅 전략 수립을 담당했습니다.",
+ "skills": ["js", "ai"]
+  },
+  {
+    "id": 7,
+    "title": "UV PET 패키지 디자인 & 제품 디자인",
+    "description": "기존 패키지 리뉴얼 요청에 따라 UV 인쇄 패키지 디자인과 제품 촬영·퍼블리싱을 일괄 진행했습니다.",
+ "skills": ["js", "ai"]
+  },
+  {
+    "id": 8,
+    "title": "TOTAL DESIGN (여권 커버)",
+    "description": "개인 프로젝트로 여권 커버를 패턴 디자인부터 고주파 제작·패키지 생산까지 전 과정에 참여하고, 상세페이지 퍼블리싱도 수행했습니다.",
+ "skills": ["js", "ai"]
+  },
+  {
+    "id": 9,
+    "title": "이마트 키오스크 & 전용 앱 개발",
+    "description": "대형마트 MD 의뢰로 자전거 실측 데이터를 활용해 3D 모델링·렌더링을 수행하고, Android Studio로 전용 앱을 개발했습니다.",
+ "skills": ["js", "ai"]
+  },
+  {
+    "id": 10,
+    "title": "Bicycle Parking System & Information Design",
+    "description": "전기자전거 대여 서비스를 위한 주차 시스템 UI/정보 디자인을 기획·구현했습니다.",
+ "skills": ["js", "ai"]
+  },
+  {
+    "id": 11,
+    "title": "Menu & Leaflet Design",
+    "description": "식당 메뉴판 디자인과 아이콘·캐릭터 제작을 통해 정보 전달성과 통일감을 높였습니다.",
+ "skills": ["js", "ai"]
+  },
+  {
+    "id": 12,
+    "title": "Brochure Design",
+    "description": "A단 접지 브로슈어 디자인 및 제품 촬영을 일괄 진행하여 비용 절감과 사용성 개선을 도모했습니다.",
+ "skills": ["js", "ai"]
+  },
+  {
+    "id": 13,
+    "title": "Moto Share Elebicycle Sharing System",
+    "description": "전기자전거 공유 서비스 플랫폼의 UI/정보 디자인을 통해 사용자 편의를 극대화했습니다.",
+ "skills": ["js", "ai"]
+  },
+  {
+    "id": 14,
+    "title": "Diving Products",
+    "description": "다이빙 용품 관련 제품 디자인 및 정보 디자인 프로젝트를 수행했습니다.",
+ "skills": ["js", "ai"]
   }
-
-
 ]

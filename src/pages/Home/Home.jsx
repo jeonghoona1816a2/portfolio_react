@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../Home/Home.module.scss';
-import projects from '../../component/data/projects.json';//데이터
 
+import Projects from '../../component/layout/Projects';
 
 export default function Home() {
    const skills = Array.from({ length: 12 }, (_, i) => i + 1);
@@ -38,34 +38,8 @@ export default function Home() {
                         ))}
                </div>
              </section>
-
-             <section>
-               <h4>Projects</h4>
-   
-            <div className={styles.projects_list}>
-              {projects.map(({ id, title, description, skills }) => (
-                <div key={id} className={styles.project_item}>
-                  <div className={styles.project_skill_list}>
-                    {skills.map((skillKey) => (
-                      <div
-                        key={skillKey}
-                        className={styles.project_skill}
-                        style={{
-                          backgroundImage: `var(--skill-image-${skillKey})`,
-                          backgroundRepeat: 'no-repeat',
-                          backgroundSize:   'contain',
-                          backgroundPosition: 'center'
-                        }}
-                      />
-                    ))}
-                  </div>
-                  <h3>{title}</h3>
-                  <p>{description}</p>
-                </div>
-              ))}
-              </div>   
-            
-             </section>
+            <Projects />
+          
            </div>
          </div>
 
