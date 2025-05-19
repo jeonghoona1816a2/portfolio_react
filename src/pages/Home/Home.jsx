@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '../Home/Home.module.scss';
 
-import Projects from '../../component/layout/Projects';
+import Projects from '../../components/layout/Projects';
 
 export default function Home() {
    const skills = Array.from({ length: 12 }, (_, i) => i + 1);

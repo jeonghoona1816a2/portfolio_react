@@ -35,20 +35,20 @@ import 'bootstrap/dist/css/bootstrap.css'
 // import ReactStrapAlerts from '../component/study/R100/R034_ReactStrapAlerts';
 // import ReactstrapBadges from '../component/study/R100/R035_ReactstrapBadges';
 // import ReactstrapBreadcrumbs  from '../component/study/R100/R036_ReactstrapBreadcrumbs';
-import ReactstrapDropdown from '../component/study/R100/R037_ReactstrapDropdown';
-import ReacstrapButtonGroup from '../component/study/R100/R038_ReactstrapButtonGroup';
-import ReactstrapButton from '../component/study/R100/R039_ReactstrapButton';
-import ReactstrapCard from '../component/study/R100/R040_ReactstrapCard';
-import ReactstrapCarousel from '../component/study/R100/R041_Reactstrapcarousel';
-import ReactstrapCollapse from '../component/study/R100/R042_ReactstrapCollapse';
-import Reactstrapfade from '../component/study/R100/R043_ReactstrapFade';
-import ReactstrapFrom from '../component/study/R100/R044_ReactstrapForm';
-import ReactstrapinputGroup from '../component/study/R100/R045_ReactstrapInputGroup';
-import ReactstrapListGroup from '../component/study/R100/R047_ReactstrapListGroup';
-import ReactstrapModal from '../component/study/R100/R048_ReactstrapModal';
-import ReactstrapNavbar from '../component/study/R100/R049_ReactstrapNavbar'; 
-import ReactstrapPagination from '../component/study/R100/R050_ReactstrapPagination';
-import ReactstrapPopover from '../component/study/R100/R051_ReactstrapPopover';
+import ReactstrapDropdown from '../components/study/R100/R037_ReactstrapDropdown';
+import ReacstrapButtonGroup from '../components/study/R100/R038_ReactstrapButtonGroup';
+import ReactstrapButton from '../components/study/R100/R039_ReactstrapButton';
+import ReactstrapCard from '../components/study/R100/R040_ReactstrapCard';
+import ReactstrapCarousel from '../components/study/R100/R041_Reactstrapcarousel';
+import ReactstrapCollapse from '../components/study/R100/R042_ReactstrapCollapse';
+import Reactstrapfade from '../components/study/R100/R043_ReactstrapFade';
+import ReactstrapFrom from '../components/study/R100/R044_ReactstrapForm';
+import ReactstrapinputGroup from '../components/study/R100/R045_ReactstrapInputGroup';
+import ReactstrapListGroup from '../components/study/R100/R047_ReactstrapListGroup';
+import ReactstrapModal from '../components/study/R100/R048_ReactstrapModal';
+import ReactstrapNavbar from '../components/study/R100/R049_ReactstrapNavbar'; 
+import ReactstrapPagination from '../components/study/R100/R050_ReactstrapPagination';
+import ReactstrapPopover from '../components/study/R100/R051_ReactstrapPopover';
 export default function ProJect501(){
     return(
     <div className="newRact">

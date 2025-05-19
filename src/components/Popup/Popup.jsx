@@ -24,7 +24,7 @@ export default function Popup({
           onClick={onClose}
           aria-label="Close popup"
         >
-          ×
+          닫기
         </button>
         <div className={styles.content}>
           {children}

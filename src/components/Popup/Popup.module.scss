@@ -1,0 +1,36 @@
+/* src/component/Popup/Popup.module.scss */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.frame {
+  position: absolute;
+  background: var(--color-bg2, #fff);
+  border-radius: var(--radius-content);
+  padding: calc(var(--spacing-base) * 2);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 90%;
+}
+
+.closeButton {
+  position: absolute;
+  top: calc(var(--spacing-base) / 3);
+  right: calc(var(--spacing-base) / 3);
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 10;
+}
+
+.content {
+  margin-top: var(--spacing-base);
+}
+

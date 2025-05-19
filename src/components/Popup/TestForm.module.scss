@@ -1,0 +1,8 @@
+.testForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-base);
+  padding: var(--spacing-base);
+  height: 800px;
+}
+

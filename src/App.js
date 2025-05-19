@@ -3,18 +3,14 @@ import React, { useState } from 'react';
 import './css/App.css';
 import './css/Mobile.css';
 import './css/layout.scss';
-
-import Sidebar from './component/layout/Sidebar';
-import Header from './component/layout/Header';
-import Content from './component/layout/Content';
-import Footer from './component/layout/Footer';
+import Sidebar from './components/layout/Sidebar';
+import Header from './components/layout/Header';
+import Content from './components/layout/Content';
+import Footer from './components/layout/Footer';
 // Popup과 SettingsForm을 단수 component 폴더에서 불러옵니다.
-import { PopupProvider } from './component/Popup/PopupContext';
+import { PopupProvider } from './components/Popup/PopupContext';
 
-// defaultSettings 선언
-const defaultSettings = {
-  theme: 'light'
-};
+
 
 function App() {
   // 공지 모달 상태
@@ -23,13 +19,8 @@ function App() {
   const closeNotice = () => setShowNotice(false);
 
 
-
-
-
   return (
     <div className="App">
-      <Sidebar />
-
       {/* 기존 공지용 모달 */}
       {showNotice && (
         <div
@@ -71,13 +62,13 @@ function App() {
 
 
    <PopupProvider>
+          <Sidebar />
       {/* 메인 레이아웃 */}
       <div className="main">
         <Header title="대시보드"  />
         <Content />
         <Footer />
       </div>
-
     </PopupProvider>
     </div>
   );
