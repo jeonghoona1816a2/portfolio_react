@@ -1,4 +1,6 @@
+// src/component/Contact/Contact.jsx
 import React, { useState } from 'react';
+import styles from './Contact.module.scss';
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
@@ -16,10 +18,10 @@ export default function Contact() {
   };
 
   return (
-    <section>
-      <h2>Contact</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
+    <section className={styles.contactSection}>
+      <h2 className={styles.contactTitle}>Contact</h2>
+      <form className={styles.contactForm} onSubmit={handleSubmit}>
+        <div className={styles.formGroup}>
           <label>
             이름:
             <input
@@ -31,7 +33,7 @@ export default function Contact() {
             />
           </label>
         </div>
-        <div>
+        <div className={styles.formGroup}>
           <label>
             이메일:
             <input
@@ -43,7 +45,7 @@ export default function Contact() {
             />
           </label>
         </div>
-        <div>
+        <div className={styles.formGroup}>
           <label>
             메시지:
             <textarea
@@ -54,7 +56,9 @@ export default function Contact() {
             />
           </label>
         </div>
-        <button type="submit">전송</button>
+        <button type="submit" className={styles.submitButton}>
+          전송
+        </button>
       </form>
     </section>
   );

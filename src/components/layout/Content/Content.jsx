@@ -7,7 +7,7 @@ import Home from '../../../pages/Home/Home';
 import About from '../../../pages/About';
 import Projects from '../../../pages/Projects';
 import Articles from '../../../pages/Articles';
-import Contact  from '../../../pages/Contact';
+import Contact  from '../../../pages/Contact/Contact';
 
 export default function Content() {
   return (

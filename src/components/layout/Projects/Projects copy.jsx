@@ -14,18 +14,16 @@ export default function Projects() {
         role="dialog"
         aria-modal="true"
       >
+     
         <h3>{project.title}</h3>
         <p>{project.description}</p>
         <ul className={styles.modal_skill_list}>
           {project.skills.map((skill) => (
             <li key={skill} className={styles.modal_skill}>
               {skill}
-
             </li>
-            
           ))}
         </ul>
-                <div style={{ backgroundImage: `url(${project.image})`, height:'100%', width:"100%" }}>1</div>
       </div>,
       {
         top: '10%',
@@ -48,6 +46,8 @@ export default function Projects() {
           <div
             key={project.id}
             className={styles.project_item}
+            onClick={() => openProjectModal(project)}
+            role="button"
             tabIndex={0}
             onKeyPress={(e) =>
               e.key === 'Enter' && openProjectModal(project)
@@ -69,7 +69,6 @@ export default function Projects() {
             </div>
             <h3>{project.title}</h3>
             <p>{project.description}</p>
-            <button onClick={() => openProjectModal(project)} role="button" > 자세히 보기</button>
           </div>
         ))}
       </div>
