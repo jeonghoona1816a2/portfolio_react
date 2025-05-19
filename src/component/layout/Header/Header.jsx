@@ -1,13 +1,43 @@
 // src/component/layout/Header/Header.jsx
 import React from 'react';
 import styles from './Header.module.scss';
+import { Settings } from 'lucide-react';
 
-// title을 props로 받아서 유연하게 사용하도록 했습니다.
-const Header = ({ title }) => (
-<div className={styles.header}>
-  <h1 className={styles.title}>{title}title</h1>
-</div>
+import { usePopup } from '../../Popup/PopupContext';
+import SettingsForm from '../../Popup/SettingsForm';
 
-);
+export default function Header({ title }) {
 
-export default Header;
+  const { showPopup } = usePopup();
+
+  const openSettings = () => {
+    showPopup(
+      <SettingsForm
+        initialSettings={{ theme: 'light' }}
+        onSave={newSettings => {
+          // …저장 로직…
+        }}
+      />,
+      {
+        top: '20%',
+        left: '50%',
+        transform: 'translateX(-50%)',
+        width: '300px'
+      }
+    );
+  };
+
+  return (
+    <header className={styles.header}>
+      <h1 className={styles.title}>{title}</h1>
+      <button
+        type="button"
+        className={styles.settingsButton}
+        onClick={openSettings}
+        aria-label="설정 열기"
+      >
+        <Settings />
+      </button>
+    </header>
+  );
+}
