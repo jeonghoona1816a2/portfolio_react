@@ -14,7 +14,6 @@ export default function Projects() {
         role="dialog"
         aria-modal="true"
       >
-     
         <h3>{project.title}</h3>
         <p>{project.description}</p>
         <ul className={styles.modal_skill_list}>
