@@ -1,5 +1,149 @@
+/* mobile.css */
 
-@media only screen and (max-width: 700px) {
-   .lnb{ display: none;}
-   .content{width: 100%; margin: 10px;}
+/* ── 공통 컨테이너 패딩 ── */
+.container {
+  padding: 0 2rem;
+}
+
+/* ── 태블릿 가로 (≤1024px) ── */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 1.5rem;
   }
+  header, footer {
+    padding: 1rem 1.5rem;
+  }
+  nav ul {
+    gap: 1rem;
+  }
+  .hero {
+    padding: 6rem 1.5rem;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  section {
+    padding: 4rem 1.5rem;
+  }
+}
+
+/* ── 태블릿 세로·큰 모바일 (≤768px) ── */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  /* 헤더 & 내비게이션 */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-toggle {            /* 햄버거 토글 버튼 보이기 */
+    display: block;
+  }
+
+  /* 히어로 섹션 */
+  .hero {
+    padding: 5rem 1rem;
+    text-align: center;
+  }
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* 일반 섹션 패딩 */
+  section {
+    padding: 4rem 1rem;
+  }
+
+  /* 어바웃(소개) 섹션 */
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about img {
+    max-width: 80%;
+    margin: 1rem 0;
+  }
+
+  /* 프로젝트 섹션 (이미 적용된 Rules 포함) */
+  .projects_list {
+    gap: var(--spacing-sm);
+  }
+  .project_item {
+    width: calc(50% - var(--spacing-sm));
+  }
+
+  /* 연락처 폼 */
+  .contact form {
+    width: 100%;
+    padding: 0;
+  }
+
+  /* 푸터 */
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ── 모바일 (≤480px) ── */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  /* 로고 크기 조정 */
+  header .logo {
+    width: 120px;
+  }
+
+  /* 고정 내비게이션 (예: 모바일 햄버거 메뉴) */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--color-bg);
+    z-index: 100;
+  }
+
+  /* 히어로 섹션 */
+  .hero {
+    padding: 4rem 0.5rem;
+  }
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  /* 일반 섹션 패딩 축소 */
+  section {
+    padding: 3rem 0.5rem;
+  }
+
+  /* 프로젝트 1열 배치 */
+  .projects_list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project_item {
+    width: 90%;
+  }
+
+  /* 스킬 아이콘 축소 */
+  .project_skill {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* 푸터 텍스트 작게 */
+  footer p {
+    font-size: 0.875rem;
+  }
+}
