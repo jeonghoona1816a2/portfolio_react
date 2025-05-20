@@ -25,7 +25,17 @@ export default function Projects() {
             
           ))}
         </ul>
-                <div style={{ backgroundImage: `url(${project.image})`, height:'100%', width:"100%" }}>1</div>
+                {/* <div style={{ backgroundImage: `url(${project.image})`, height:'100%', width:"100%" }}>1</div> */}
+                {/* 이미지가 길어지면 스크롤 되는 컨테이너 */}
+       {/** 이미지가 없을때 */}
+        {project.image && project.image.length > 0 && (
+        <div className={styles.modal_image_container}>        
+          <img
+            src={project.image[0]}
+            alt={project.title}
+            className={styles.modal_image}
+          />
+       </div>)}
       </div>,
       {
         top: '10%',
@@ -33,7 +43,7 @@ export default function Projects() {
         transform: 'translateX(-50%)',
         width: '50%',
         // 필요에 따라 height도 지정 가능
-         height: '500px',
+        maxHeight: '80vh',
         overflowY: 'auto',
         
       }

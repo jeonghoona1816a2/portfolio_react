@@ -65,7 +65,7 @@ function App() {
           <Sidebar />
       {/* 메인 레이아웃 */}
       <div className="main">
-        <Header title="대시보드"  />
+        <Header title=" "  />
         <Content />
         <Footer />
       </div>

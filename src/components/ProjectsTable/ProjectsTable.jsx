@@ -1,103 +1,35 @@
 // src/components/ProjectsTable/ProjectsTable.jsx
-//npm install @tanstack/react-table 설치 필요
-
-import React, { useMemo } from 'react';
-import {
-  useReactTable,
-  getCoreRowModel,
-  getSortedRowModel,
-  flexRender,
-} from '@tanstack/react-table';
-
-// 컬럼 정의
-const columns = [
-  {
-    accessorKey: 'companyName',
-    header: '회사명',
-    cell: info => info.getValue(),
-  },
-  {
-    accessorKey: 'summary',
-    header: '소개',
-    cell: info => info.getValue(),
-  },
-  {
-    accessorKey: 'role',
-    header: '담당직무',
-    cell: info => info.getValue(),
-  },
-  {
-    accessorKey: 'startDate',
-    header: '시작일',
-    cell: info => info.getValue(),
-  },
-  {
-    accessorKey: 'endDate',
-    header: '종료일',
-    cell: info => info.getValue(),
-  },
-  {
-    accessorKey: 'position',
-    header: '직책',
-    cell: info => info.getValue(),
-  },
-];
-
+import React from 'react';
+import styles from './ProjectsTable.module.scss'; // CSS 모듈을 사용하여 스타일을 적용합니다
 export default function ProjectsTable({ projects }) {
-  // 테이블 인스턴스 생성
-  const table = useReactTable({
-    data: projects,
-    columns,
-    state: {
-      sorting: projects.sorting,      // 초기 정렬 상태를 여기에 넣어도 되고
-    },
-    onSortingChange: sorting => {
-      table.setSorting(sorting);
-    },
-    getCoreRowModel: getCoreRowModel(),
-    getSortedRowModel: getSortedRowModel(),
-    // 필요시 페이징, 필터링 훅도 추가 가능
-  });
-
   return (
     <div style={{ overflowX: 'auto' }}>
       <table style={{ width: '100%', borderCollapse: 'collapse' }}>
         <thead>
-          {table.getHeaderGroups().map(headerGroup => (
-            <tr key={headerGroup.id}>
-              {headerGroup.headers.map(header => (
-                <th
-                  key={header.id}
-                  onClick={header.column.getToggleSortingHandler()}
-                  style={{
-                    padding: '8px',
-                    textAlign: 'left',
-                    cursor: header.column.getCanSort() ? 'pointer' : 'default',
-                    userSelect: 'none',
-                    borderBottom: '2px solid #ddd',
-                  }}
-                >
-                  {flexRender(
-                    header.column.columnDef.header,
-                    header.getContext()
-                  )}
-                  {{
-                    asc: ' 🔼',
-                    desc: ' 🔽',
-                  }[header.column.getIsSorted()] ?? null}
-                </th>
-              ))}
-            </tr>
-          ))}
+          <tr>
+            <th className={styles.projecttabe_th} >ID</th>
+            <th className={styles.projecttabe_th} >프로젝트명</th>
+            <th className={styles.projecttabe_th} >설명</th>
+            <th className={styles.projecttabe_th} >기술 스택</th>
+            <th className={styles.projecttabe_th} >이미지</th>
+          </tr>
         </thead>
         <tbody>
-          {table.getRowModel().rows.map(row => (
-            <tr key={row.id} style={{ borderBottom: '1px solid #eee' }}>
-              {row.getVisibleCells().map(cell => (
-                <td key={cell.id} style={{ padding: '8px' }}>
-                  {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                </td>
-              ))}
+          {projects.map(proj => (
+            <tr key={proj.id} style={{ borderBottom: '1px solid #eee' }}>
+              <td className={styles.projecttabe_td}>{proj.id}</td>
+              <td className={styles.projecttabe_td}>{proj.title}</td>
+              <td className={styles.projecttabe_td}>{proj.description}</td>
+              <td className={styles.projecttabe_td}>{(proj.skills || []).join(', ')}</td>
+              <td className={styles.projecttabe_td}>
+                {proj.image && proj.image.length > 0 && (
+                  <img
+                    src={proj.image[0]}
+                    alt={proj.title}
+                    style={{ width: 60, height: 'auto', borderRadius: 4 }}
+                  />
+                )}
+              </td>
             </tr>
           ))}
         </tbody>
