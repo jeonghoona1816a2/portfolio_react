@@ -16,7 +16,7 @@ export default function Home() {
       
         <div className={styles.content}>
           <div className={styles.content_inner}>
-             <section>
+             {/* <section>
                <h2>안녕하세요, UI/UX 담당자 전정훈입니다</h2>
                <p>
                  이 인사는 늘 새로운 시작을 알리며, 디자인·퍼블리싱·개발 전 영역에서
@@ -26,7 +26,7 @@ export default function Home() {
                  협업으로 최고의 결과물을 만들어 가겠습니다. 귀사와도 이 설렘으로 함께
                  시작하기를 기대합니다. 감사합니다.
                </p>
-             </section>
+             </section> */}
 
              <section >
                <h4>Skills</h4>

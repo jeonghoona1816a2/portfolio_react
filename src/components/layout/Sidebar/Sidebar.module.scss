@@ -1,20 +1,116 @@
- .sidebar { width: 250px; background-color: var(--color-sidebar-bg); color: #fff; display: flex; align-items:left; flex-direction: column; padding: var(--spacing-base); border-radius: 30px 0 0 30px;
-     margin: 30px 00px 30px 30px; }
+.sidebar {
+  width: 250px;
+  background-color: var(--color-sidebar-bg);
+  height: calc(100vh - 60px);
+  color: #fff;
+  display: flex;
+  // align-items: flex-start; // left → flex-start
+  flex-direction: column;
+  padding: var(--spacing-base);
+  border-radius: 30px 0 0 30px;
+  margin: 30px 0 30px 30px;
 
-.profile_card{ display: flex; align-items: center; flex-direction: column; margin-bottom: var(--spacing-base); 
-  .myimage {
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    background-color: #fff;
-    background-image: url('../../../images/myimage.png');
-    background-repeat: no-repeat;
-    background-size:100%;        // 컨테이너 크기에 맞춰 채우기
-    background-position: 50% ;   // 중앙에 위치
+    .myimage {
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+      background-color: #fff;
+      background-image: url('../../../images/myimage.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: 50%;
+    }
+
+    .collapse_btn {
+        padding: 8px 20px;
+        background: var(--color-sidebar-bg);
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        transition: background 0.2s, color 0.2s;
+        margin-top: auto;
+        align-self: flex-end;
+        
+      &:hover {
+        background: var(--mainmune-hover-bg);
+        color: #fff;
+      }
+    }
+
+  &.collapsed {
+    width: 80px;
+    font-size: 8px;
+
+    .profile_card {
+      width: 110px;
+      background-color: var(--color-sidebar-bg);
+      color: #fff;
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: var(--spacing-base);
+      border-radius: 10px 0 0 10px;
+      margin: 10px 0 10px 10px;
+    }
+    .myimage {
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: 50%;
+    }
+
+  }
+
+
+
+  .profile_card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: calc(var(--spacing-base) * 2);
   }
 }
-.menu_list { list-style: none; padding: 0; margin: 0;  display: flex; flex-direction: column;}
-.menu_item { color: #fff; padding: calc(var(--spacing-base) * 1) calc(var(--spacing-base) * 2); cursor: pointer; }
-.menu_item_active{ background-color: var(--mainmune-hover-bg); border-radius: 10px; color:#fff; padding: calc(var(--spacing-base) * 1) calc(var(--spacing-base) * 2);  }
-// .menu_item_active::before{content: ""; width: 3px; height: 3px; display: inline-block; background: #fff; margin: 0 10px 3px 10px; } 
-.menu_item_active:hover,.menu_item:hover{ background-color: var(--mainmune-hover-bg); border-radius: 10px; }
+
+.menu_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu_item,
+.menu_item_active {
+  color: #fff;
+  padding: calc(var(--spacing-base) * 1) calc(var(--spacing-base) * 2);
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.2s;
+}
+
+/* 또는 gap 대신 margin-bottom 사용
+.menu_item {
+  margin-bottom: 8px;
+}
+.menu_item:last-child {
+  margin-bottom: 0;
+}
+*/
+
+.menu_item_active {
+  background-color: var(--mainmune-hover-bg);
+  color: #fff;
+}
+
+.menu_item_active:hover,
+.menu_item:hover {
+  background-color: var(--mainmune-hover-bg);
+}

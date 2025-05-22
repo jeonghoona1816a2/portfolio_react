@@ -1,45 +1,29 @@
-// src/component/layout/Sidebar/Sidebar.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Sidebar.module.scss';
 import { NavLink } from 'react-router-dom';
+import { Home,Speech,FolderOpen,Layers, MessageCircle, PanelLeft  } from 'lucide-react';
+
 
 const MENU = [
-  { path: '/',         label: 'Home' },
-  { path: '/about',    label: 'About' },
-  { path: '/projects', label: 'Projects' },
-  { path: '/articles', label: 'Articles' },
-  { path: '/contact',  label: 'Contact' },
+  { path: '/',         label: 'Home' , icon:Home },
+  { path: '/about',    label: 'About'  , icon:Speech },
+  { path: '/projects', label: 'Projects' , icon:FolderOpen  },
+  { path: '/workarticles', label: 'workarticles' , icon:Layers  },
+  { path: '/contact',  label: 'Contact' , icon:MessageCircle },
 ];
 
-// const Sidebar = () => (
-//   <aside className={styles.sidebar}>
-//     <div className={styles.profile_card}>
-//       <h1>profile</h1>
-//       <h4>JEONJEONGHOON</h4>
-//       <div className={styles.myimage}></div>
-//     </div>
-
-//     <div className={styles.menu_list}>
-//       <div className={styles.menu_item}>Home</div>
-//       <div className={styles.menu_item}>About</div>
-//       <div className={styles.menu_item}>Projects</div>
-//       <div className={styles.menu_item}>Articles</div>
-//       <div className={styles.menu_item}>Contact</div>
-//     </div>
-//   </aside>
-// );
-
-// export default Sidebar;
-
 export default function Sidebar() {
+  const [collapsed, setCollapsed] = useState(false);
+
   return (
-    <aside className={styles.sidebar}>
-       <div className={styles.profile_card}>
-      <h1>profile</h1>
-    <h4>JEONJEONGHOON</h4>       <div className={styles.myimage}></div>
-     </div>
+    <aside className={`${styles.sidebar} ${collapsed ? styles.collapsed : ''}`}>
+      <div className={styles.profile_card}>
+        <h1>profile</h1>
+        <h4>JEONJEONGHOON</h4>
+        <div className={styles.myimage}></div>
+      </div>
       <nav className={styles.menu_list}>
-        {MENU.map(({ path, label }) => (
+        {MENU.map(({ path, label, icon: Icon  }) => (
           <NavLink
             key={path}
             to={path}
@@ -48,10 +32,18 @@ export default function Sidebar() {
               isActive ? styles.menu_item_active : styles.menu_item
             }
           >
-            {label}
+           <Icon size={20} className={styles.menu_icon} /> {label}
           </NavLink>
         ))}
       </nav>
+      <button
+        className={styles.collapse_btn}
+        onClick={() => setCollapsed((prev) => !prev)}
+        aria-label="사이드바 열기/닫기"
+       title="사이드바 열기/닫기"
+      >
+        <PanelLeft/>
+      </button>
     </aside>
   );
 }

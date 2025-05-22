@@ -1,5 +1,5 @@
 .projects_list { display: flex; flex-direction: row; background-color: var(--color-bg); height: 370px; align-items: center; justify-content: flex-start; flex-wrap: wrap; align-content: flex-start; gap: var(--spacing-base); }
-.project_item { width: calc(25% - 6px); height: 280px; background-color: var(--color-bg2); border-radius: var(--radius-content); padding: calc(var(--paddig-base) * 2); }
+.project_item { width: calc(25% - 6px); height: 230px; background-color: var(--color-bg2); border-radius: var(--radius-content); padding: calc(var(--paddig-base) * 2); }
 .project_skill_list { display: flex; flex-direction: row; align-items: center; justify-content: flex-start; border-radius: var(--radius-content); }
 .project_skill { width: 30px; height: 30px; }
 .project_skill:not:first-child { margin-left: calc(var(--spacing-base) / 2); }

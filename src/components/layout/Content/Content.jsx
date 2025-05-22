@@ -6,7 +6,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from '../../../pages/Home/Home';
 import About from '../../../pages/About';
 import Projects from '../../../pages/Projects';
-import Articles from '../../../pages/Articles';
+import Workarticles from '../../../pages/Workarticles';
 import Contact  from '../../../pages/Contact/Contact';
 
 export default function Content() {
@@ -16,8 +16,8 @@ export default function Content() {
         <Routes>
           <Route path="/"        element={<Home />} />
           <Route path="/about"   element={<About />} />
-          <Route path="/projects"element={<Projects />} />
-          <Route path="/articles"element={<Articles />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/workarticles" element={<Workarticles />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
