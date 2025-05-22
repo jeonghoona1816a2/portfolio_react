@@ -9,16 +9,18 @@
   padding: var(--spacing-base);
   border-radius: 30px 0 0 30px;
   margin: 30px 0 30px 30px;
-
+  transition: width 0.3s cubic-bezier(0.4,0,0.2,1), font-size 0.3s cubic-bezier(0.4,0,0.2,1);
+    .menu_icon{ margin-right: 8px;}
     .myimage {
       height: 120px;
       width: 120px;
-      border-radius: 50%;
+      border-radius: 30px;
       background-color: #fff;
       background-image: url('../../../images/myimage.png');
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: 50%;
+      transition: width 0.2s cubic-bezier(0.4,0,0.2,1), font-size 0.3s cubic-bezier(0.4,0,0.2,1);
     }
 
     .collapse_btn {
@@ -26,14 +28,15 @@
         background: var(--color-sidebar-bg);
         color: #fff;
         border: none;
-        border-radius: 20px;
+        border-radius: 80px;
         font-size: 1rem;
         font-weight: 600;
         cursor: pointer;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-        transition: background 0.2s, color 0.2s;
+        transition: background 0.4s, color 0.4s;
+      
         margin-top: auto;
-        align-self: flex-end;
+        align-self: flex-start;
         
       &:hover {
         background: var(--mainmune-hover-bg);
@@ -41,76 +44,98 @@
       }
     }
 
+    .menu_item_active {
+    background-color: var(--mainmune-hover-bg);
+    color: #fff;
+    }
+
+    .menu_item_active:hover,
+    .menu_item:hover {
+    background-color: var(--mainmune-hover-bg);
+    }
+
+    .menu_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+        transition: width 0.3s cubic-bezier(0.4,0,0.2,1), font-size 0.3s cubic-bezier(0.4,0,0.2,1);
+    }
+
+    .menu_item,
+    .menu_item_active {
+    color: #fff;
+    padding: calc(var(--spacing-base) * 1) calc(var(--spacing-base) * 1);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+    display: flex;
+    }
+
+    .profile_card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: calc(var(--spacing-base) * 2);
+    transition: width 0.3s cubic-bezier(0.4,0,0.2,1), font-size 0.3s cubic-bezier(0.4,0,0.2,1);
+    }
+
+
+
   &.collapsed {
-    width: 80px;
+    width: 82px;
     font-size: 8px;
 
     .profile_card {
-      width: 110px;
-      background-color: var(--color-sidebar-bg);
       color: #fff;
-      display: flex;
-      align-items: flex-start;
-      flex-direction: column;
       padding: var(--spacing-base);
-      border-radius: 10px 0 0 10px;
-      margin: 10px 0 10px 10px;
+      margin: 0;
+      font-size: 1rem;
+      word-break: break-all;      // 단어 중간에서도 줄바꿈
+      white-space: normal;  
+      margin-bottom: 20px;
     }
     .myimage {
       height: 40px;
       width: 40px;
-      border-radius: 50%;
       background-color: #fff;
       background-repeat: no-repeat;
       background-size: 100%;
       background-position: 50%;
     }
-
-  }
-
-
-
-  .profile_card {
+    .menu_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    margin-bottom: calc(var(--spacing-base) * 2);
+    gap: 8px;
+    }
+    .menu_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .menu_icon{ margin-right: 0px;}
+    }
+    .menu_item,
+    .menu_item_active {
+    color: #fff;
+    padding: calc(var(--spacing-base) * 1) calc(var(--spacing-base) * 2);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
   }
-}
 
-.menu_list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.menu_item,
-.menu_item_active {
-  color: #fff;
-  padding: calc(var(--spacing-base) * 1) calc(var(--spacing-base) * 2);
-  cursor: pointer;
-  border-radius: 10px;
-  transition: background-color 0.2s;
-}
-
-/* 또는 gap 대신 margin-bottom 사용
-.menu_item {
-  margin-bottom: 8px;
-}
-.menu_item:last-child {
-  margin-bottom: 0;
-}
-*/
-
-.menu_item_active {
-  background-color: var(--mainmune-hover-bg);
-  color: #fff;
-}
-
-.menu_item_active:hover,
-.menu_item:hover {
-  background-color: var(--mainmune-hover-bg);
 }

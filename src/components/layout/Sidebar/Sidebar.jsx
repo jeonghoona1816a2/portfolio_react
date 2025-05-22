@@ -18,8 +18,8 @@ export default function Sidebar() {
   return (
     <aside className={`${styles.sidebar} ${collapsed ? styles.collapsed : ''}`}>
       <div className={styles.profile_card}>
-        <h1>profile</h1>
-        <h4>JEONJEONGHOON</h4>
+       <div><h1 style={{ color: "#FF7143",display:"inline-block" }}>P</h1><h1 style={{ display:"inline-block" }}>ro</h1><h1 style={{ color: "#FF7143",display:"inline-block"  }}>F</h1><h1 style={{ display:"inline-block" }}>ile</h1></div>
+        <h4>  JEON<span style={{ color: "#FF7143" }}>.</span>JEONG HOON</h4>
         <div className={styles.myimage}></div>
       </div>
       <nav className={styles.menu_list}>

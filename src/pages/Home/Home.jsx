@@ -4,7 +4,7 @@ import styles from '../Home/Home.module.scss';
 import Projects from '../../components/layout/Projects';
 
 export default function Home() {
-   const skills = Array.from({ length: 12 }, (_, i) => i + 1);
+   const skills = Array.from({ length: 13 }, (_, i) => i + 1);
   // const projcts = Array.from({ length: 4 }, (_, i) => i + 1);
 
 

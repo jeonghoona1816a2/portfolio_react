@@ -1,9 +1,15 @@
 .projects_list { display: flex; flex-direction: row; background-color: var(--color-bg); height: 370px; align-items: center; justify-content: flex-start; flex-wrap: wrap; align-content: flex-start; gap: var(--spacing-base); }
 .project_item { width: calc(25% - 6px); height: 230px; background-color: var(--color-bg2); border-radius: var(--radius-content); padding: calc(var(--paddig-base) * 2); }
-.project_skill_list { display: flex; flex-direction: row; align-items: center; justify-content: flex-start; border-radius: var(--radius-content); }
-.project_skill { width: 30px; height: 30px; }
-.project_skill:not:first-child { margin-left: calc(var(--spacing-base) / 2); }
-.project_skill { margin-left: calc(var(--spacing-base)); }
+.project_skill_list { display: flex; gap: 8px; flex-direction: row; align-items: center; justify-content: flex-start; border-radius: var(--radius-content); }
+.project_skill { width: 20px; height: 30px; }
+
+
+.project_skill:not:first-child { margin-left: calc(var(--spacing-base) / 1); }
+
+
+
+.skill_item{  width: 15px;  height: 30px;  background-size: cover;  background-repeat: no-repeat;  background-position: center;  margin-left: calc(var(--spacing-base) / 2);}
+.skill_item:not(:first-child) { margin-left: 8px; }
 
 .skill_item:nth-child(1) { background-image: var(--skill-image-ai); height: 29px; }
 .skill_item:nth-child(2) { background-image: var(--skill-image-andst); }
@@ -17,6 +23,7 @@
 .skill_item:nth-child(10) { background-image: var(--skill-image-w3c); height: 22px; }
 .skill_item:nth-child(11) { background-image: var(--skill-image-ws); height: 22px; }
 .skill_item:nth-child(12) { background-image: var(--skill-image-xd); height: 29px; }
+.skill_item:nth-child(13) { background-image: var(--skill-image-ps); height: 29px; }
 
 .modal_overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6); display: flex; align-items: center; justify-content: center; z-index: 1000; }
 // .project_modal {  }

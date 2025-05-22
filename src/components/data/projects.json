@@ -3,21 +3,21 @@
     "id": 1,
     "title": "대법원 차세대 UI/UX 프리랜서",
     "description": "전자소송포털, 전자공탁, 재판조력자 선발 등 8개 PC 웹사이트 및 3개 모바일 화면의 UI/UX 디자인과 퍼블리싱을 수행하고, 공통 컴포넌트 가이드를 제공하여 유지보수를 용이하게 했습니다.",
-    "skills": ["js", "ai"],
+    "skills": ["js","w3c","ws","ai","xd","ps","css"],
     "image": ["/images/portfolio/01-daebeopwon-uiux-freelancer.png"]
   },
   {
     "id": 2,
     "title": "SK하이닉스 내부 파일 승인 포털",
     "description": "하이닉스 내부 파일 승인 업무 포털의 디자인 및 퍼블리싱을 담당하여, 반응형 웹 구현과 크로스 브라우징·웹접근성 최적화를 수행했습니다.",
-    "skills": ["js", "ai"],
+    "skills": ["html5","ai","xd","ps","css"],
     "image": []
   },
   {
     "id": 3,
     "title": "제이엔제이 웹 디자인 및 퍼블리싱",
     "description": "제이엔제이 디자인사업부 프리랜서로 웹사이트 기획부터 디자인·퍼블리싱, 일러스트 작업까지 수행하며, React 기반 UI 설계도 병행했습니다.",
-    "skills": ["js", "ai"],
+    "skills": ["js","ai","xd","ps","css","html5"],
     "image": ["/images/portfolio/03-jnj-web-design-publishing.png"]
   },
   {

@@ -5,6 +5,11 @@ import styles from './Projects.module.scss';
 import { usePopup } from '../../Popup/PopupContext';
 
 export default function Projects() {
+  const truncate = (text, max = 100) =>{
+    return(  text.length > max ? `${text.slice(0, max)}...` : text);
+  }
+
+
   const { showPopup } = usePopup();
 
   const openProjectModal = (project) => {
@@ -15,7 +20,7 @@ export default function Projects() {
         aria-modal="true"
       >
         <h3>{project.title}</h3>
-        <p>{project.description}</p>
+          <p>{project.description}</p>
         <ul className={styles.modal_skill_list}>
           {project.skills.map((skill) => (
             <li key={skill} className={styles.modal_skill}>
@@ -78,7 +83,7 @@ export default function Projects() {
               ))}
             </div>
             <h3>{project.title}</h3>
-            <p>{project.description}</p>
+              <p>{truncate(project.description, 50)}</p>
             <button onClick={() => openProjectModal(project)} role="button" > 자세히 보기</button>
           </div>
         ))}

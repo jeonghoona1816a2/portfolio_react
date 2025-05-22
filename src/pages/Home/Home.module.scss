@@ -1,15 +1,17 @@
 .skills_list{display: flex; flex-direction: row; background-color: var(--color-bg2); height: 74px;    align-items: center; border-radius: var(  --radius-content);    justify-content: space-evenly;}
 .skill_item{width: 30px; height: 30px; background-color: aliceblue; }
 
-.skill_item:nth-child(1)  { background-image: var(--skill-image-ai);  height:29px ;}
-.skill_item:nth-child(2)  { background-image: var(--skill-image-andst);  }
-.skill_item:nth-child(3)  { background-image: var(--skill-image-css); }
-.skill_item:nth-child(4)  { background-image: var(--skill-image-js); }
-.skill_item:nth-child(5)  { background-image: var(--skill-image-react);  height: 29px; }
-.skill_item:nth-child(6)  { background-image: var(--skill-image-sass);  height: 23px; }
-.skill_item:nth-child(7)  { background-image: var(--skill-image-figma);  width: 20px; }
-.skill_item:nth-child(8)  { background-image: var(--skill-image-html5); }
-.skill_item:nth-child(9)  { background-image: var(--skill-image-git); }
-.skill_item:nth-child(10) { background-image: var(--skill-image-w3c); height:22px ; }
-.skill_item:nth-child(11) { background-image: var(--skill-image-ws);  height:22px ; }
+
+.skill_item:nth-child(1)  { background-image: var(--skill-image-andst);  }
+.skill_item:nth-child(2)  { background-image: var(--skill-image-css); }
+.skill_item:nth-child(3)  { background-image: var(--skill-image-js); }
+.skill_item:nth-child(4)  { background-image: var(--skill-image-react);  height: 29px; }
+.skill_item:nth-child(5)  { background-image: var(--skill-image-sass);  height: 23px; }
+.skill_item:nth-child(6)  { background-image: var(--skill-image-figma);  width: 20px; }
+.skill_item:nth-child(7)  { background-image: var(--skill-image-html5); }
+.skill_item:nth-child(8)  { background-image: var(--skill-image-git); }
+.skill_item:nth-child(9) { background-image: var(--skill-image-w3c); height:22px ; }
+.skill_item:nth-child(10) { background-image: var(--skill-image-ws);  height:22px ; }
+.skill_item:nth-child(11)  { background-image: var(--skill-image-ai);  height:29px ;}
 .skill_item:nth-child(12) { background-image: var(--skill-image-xd); height:29px ; }
+.skill_item:nth-child(13) { background-image: var(--skill-image-ps); height:29px ; }

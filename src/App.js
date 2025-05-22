@@ -1,5 +1,5 @@
 // src/App.js
-import React, { useState } from 'react';
+import React from 'react';
 import './css/App.css';
 import './css/Mobile.css';
 import './css/layout.scss';
@@ -13,16 +13,16 @@ import { PopupProvider } from './components/Popup/PopupContext';
 
 
 function App() {
-  // 공지 모달 상태
-  const [showNotice, setShowNotice] = useState(true);
-  // 공지 모달 닫기
-  const closeNotice = () => setShowNotice(false);
+  // // 공지 모달 상태
+  // const [showNotice, setShowNotice] = useState(true);
+  // // 공지 모달 닫기
+  // const closeNotice = () => setShowNotice(false);
 
 
   return (
     <div className="App">
-      {/* 기존 공지용 모달 */}
-      {showNotice && (
+     {/* 기존 공지용 모달*/}
+      {/* {showNotice && (
         <div
           className="dim"
           style={{
@@ -58,7 +58,7 @@ function App() {
             </span>
           </div>
         </div>
-      )}
+      )} */}
 
 
    <PopupProvider>
