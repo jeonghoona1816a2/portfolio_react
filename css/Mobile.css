@@ -1,0 +1,15 @@
+/* @media only screen and (max-width: 700px) {
+   .lnb{ display: none;}
+   .content{width: 100%; margin: 10px;}
+  } */
+   @media only screen and (max-width: 700px) and (orientation: landscape) {
+  body {
+    /* 가로 모드에서만 적용할 스타일 */
+    /* 예시: */
+    min-width: 480px;
+    max-width: 100vw;
+    /* 필요하다면 폰트 크기, 레이아웃 등 조정 */
+  }
+  .lnb { display: none; }
+  .content { width: 100%; margin: 10px; }
+}
