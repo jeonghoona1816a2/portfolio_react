@@ -22,7 +22,6 @@
   --font-subtitle:22px;
   --line-height-base: 1.5;
   --mainmune-hover-bg:#FF7143;
-  --pint-bg:#FF7143;
   --color-bg: #ffffff;
   --color-bg1:#F1F7FA;
   --color-bg2:#FAFAFA;
@@ -115,17 +114,11 @@ a:hover { text-decoration: underline; }
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
   margin: 0 4px;
-  
 }
 
 .button_small {
   padding: 0.25rem 0.7rem;
   font-size: 0.85rem;
-  border-radius: 8px;
-  border: 0px;
-  color: var(--color-sidebar-bg);
-  font-weight: 500;
-  
 }
 
 .button_medium {
@@ -145,12 +138,4 @@ a:hover { text-decoration: underline; }
   background: #eee;
   color: #aaa;
   cursor: not-allowed;
-}
-.button:hover,
-.button_small:hover,
-.button_medium:hover,
-.button_big:hover {
-  background: var(--mainmune-hover-bg);
-  color: #fff;
-  transition: background 0.2s, color 0.2s;
 }

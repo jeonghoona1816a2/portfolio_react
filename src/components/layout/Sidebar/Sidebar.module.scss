@@ -46,12 +46,14 @@
 
     .menu_item_active {
     background-color: var(--mainmune-hover-bg);
+     transition: color 3s cubic-bezier(0.4,0,0.2,1);
     color: #fff;
     }
 
     .menu_item_active:hover,
     .menu_item:hover {
     background-color: var(--mainmune-hover-bg);
+    transition: color 3s cubic-bezier(0.4,0,0.2,1);
     }
 
     .menu_list {
@@ -80,6 +82,11 @@
     flex-direction: column;
     margin-bottom: calc(var(--spacing-base) * 2);
     transition: width 0.3s cubic-bezier(0.4,0,0.2,1), font-size 0.3s cubic-bezier(0.4,0,0.2,1);
+    .title{
+       display:inline-block;
+       transition: color 2s cubic-bezier(0.4,0,0.2,1);
+    }
+
     }
 
 
@@ -96,6 +103,8 @@
       word-break: break-all;      // 단어 중간에서도 줄바꿈
       white-space: normal;  
       margin-bottom: 20px;
+    .title:nth-child(1){ color:#FF7143;}
+    .title:nth-child(3){ color:#FF7143;}
     }
     .myimage {
       height: 40px;

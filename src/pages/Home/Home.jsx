@@ -1,13 +1,11 @@
 import React from 'react';
 import styles from '../Home/Home.module.scss';
-
 import Projects from '../../components/layout/Projects';
+
 
 export default function Home() {
    const skills = Array.from({ length: 13 }, (_, i) => i + 1);
   // const projcts = Array.from({ length: 4 }, (_, i) => i + 1);
-
-
   return (
     <section>
       {/* <h2>Home</h2>
@@ -30,13 +28,16 @@ export default function Home() {
 
              <section >
                <h4>Skills</h4>
-               <div className={styles.skills_list}>
+               <div className={styles.skills_list}>        
                  {skills.map((num) => (
                           <div key={num} className={styles.skill_item}>
                             {/*num*/}
                           </div>
                         ))}
                </div>
+             </section>
+             <section>
+
              </section>
             <Projects />
           

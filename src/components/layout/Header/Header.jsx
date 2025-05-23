@@ -5,7 +5,7 @@ import { Settings, MessageCircle } from 'lucide-react';
 import { usePopup } from '../../Popup/PopupContext';
 import SettingsForm from '../../Popup/SettingsForm';
 import TestForm from '../../Popup/TestForm';
-
+import CarouselWrapper from '../../../components/layout/CarouselWrapper/carouselWrapper';
 
 export default function Header({ title }) {
 
@@ -41,8 +41,9 @@ export default function Header({ title }) {
   };
 
   return (
-    <header className={styles.header}>
+    <header className={styles.header}> <CarouselWrapper/>
       <h1 className={styles.title}>{title}</h1>
+
      <div>
       <button type="button" className={styles.TestFormButton} onClick={openTestForm} aria-label="테스트 열기">
         <MessageCircle />
