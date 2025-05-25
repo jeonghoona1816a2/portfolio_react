@@ -12,6 +12,7 @@ export default function Popup({
 
   return (
     <div className={styles.overlay} onClick={onClose}>
+
       <div
         className={styles.frame}
         style={frameStyles}   // 여기에 A에서 받은 스타일이 적용됩니다
@@ -19,13 +20,16 @@ export default function Popup({
         role="dialog"
         aria-modal="true"
       >
-        <button
+      <div>
+      <h3>inner</h3>      
+       <button
           className={styles.closeButton}
           onClick={onClose}
           aria-label="Close popup"
         >
-          닫기
+          x
         </button>
+     </div>
         <div className={styles.content}>
           {children}
         </div>

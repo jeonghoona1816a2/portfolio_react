@@ -48,9 +48,7 @@ frameStyles: 팝업 크기·위치 등 스타일을 객체 형태로 받음(기�
   );
 }
 /**useContext(PopupContext)로 Context 값을 가져옴.
-
 만약 Provider 밖에서 호출되면 ctx가 undefined이므로 에러를 던져 잘못된 사용을 방지.
-
 정상적이라면 { showPopup, closePopup } 객체를 반환. */
 export function usePopup() {
   const ctx = useContext(PopupContext);

@@ -2,7 +2,7 @@
 
 /**
  * <pre>
- * PSP layout CSS
+ *  layout CSS
  * </pre>
  *
  * @see
@@ -31,8 +31,8 @@
   --color-primary: #007bff;
   --color-secondary: #6c757d;
   --color-border: #dee2e6;
-  --spacing-base: 8px;
-  --paddig-base: 8px;
+  --spacing-base: 12px;
+  --paddig-base: 12px;
   --radius-content: 10px;
   
   // --skill-image1:url(../src/images/ai_logo.png)
@@ -67,6 +67,19 @@ html, body {
   line-height: var(--line-height-base);
   background-color: var(--color-bg1);
   color: var(--color-text);
+}
+button, input, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+background-color: transparent; 
+}
+
+button{
+  svg{
+    margin-right: 8px;
+  }
+  padding: 8px;
 }
 
 h1 { font-size: 2em; margin: 0; padding: 0; }
@@ -125,7 +138,8 @@ a:hover { text-decoration: underline; }
   border: 0px;
   color: var(--color-sidebar-bg);
   font-weight: 500;
-  
+  background: var(--color-bg);
+  display: flex;
 }
 
 .button_medium {

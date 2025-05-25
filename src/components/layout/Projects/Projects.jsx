@@ -43,7 +43,7 @@ export default function Projects() {
           </Suspense>
         ) : (
           <>  {/* linkValue 없을 때 기본 UI */}
-            <h3>{project.title}</h3>
+            <span className={styles.project_title}>{project.title}</span>
             <p>{project.description}</p>
             <ul className={styles.modal_skill_list}>
               {project.skills.map((skill) => (
@@ -65,7 +65,7 @@ export default function Projects() {
         )}
       </div>,
       {
-        top: '10%',
+        top: '5%',
         left: '50%',
         transform: 'translateX(-50%)',
       }
@@ -77,8 +77,7 @@ export default function Projects() {
       <h4>Projects</h4>
       <div className={styles.projects_list}>
         {projects.map((project) => (
-          
-          <div
+           <div
             key={project.id}
             className={styles.project_item}
             tabIndex={0}
@@ -87,19 +86,13 @@ export default function Projects() {
             <div className={styles.project_card_image}>
             {project.image && project.image.length > 0 ? (
               <div
-                className={styles.modal_image_container}
-                style={{
-                  width: '100%',
-                  height: '100px',
-                  backgroundImage: `url(${project.image[0]})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundPositionY: '30%',
+                className={styles.project_image_container}
+                style={{ backgroundImage: `url(${project.image[0]})`,    
                 }}
               />
             ) : (
               <div
-                className={styles.modal_image_container}
+                className={styles.project_image_container_empty}
                 style={{
                   width: '100%',
                   height: '100px',
@@ -118,13 +111,10 @@ export default function Projects() {
 
             </div>
             <div className={styles.project_title}>
-            <h4>{project.title}</h4>    
-             <button className="button_small"
-              onClick={() => openProjectModal(project)}        >
-              <ExternalLink  size={18} />
-            </button>
+            <span title={project.title}>{project.title}</span>    
+         
             </div>
-            <p>{truncate(project.description, 50)}</p>
+            <p>{truncate(project.description, 58)}</p>
             <div className={styles.project_skill_list}>
               {project.skills.map((skillKey) => (
                 <div
@@ -139,7 +129,10 @@ export default function Projects() {
                 />
               ))}
             </div>
-       
+           <button className="button_small"
+              onClick={() => openProjectModal(project)}        >
+              <ExternalLink  size={18} /> 자세히 보기
+            </button>
           </div>
         ))}
       </div>

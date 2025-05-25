@@ -16,6 +16,7 @@
   padding: calc(var(--spacing-base) * 2);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   max-width: 90%;
+
 }
 
 .closeButton {
@@ -26,8 +27,7 @@
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  font-size: 14px;
-  margin: 10;
+  margin: 10px;
 }
 
 .content {
