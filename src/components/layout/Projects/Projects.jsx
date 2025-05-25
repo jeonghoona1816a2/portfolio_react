@@ -73,7 +73,7 @@ export default function Projects() {
   };
 
   return (
-    <section>
+    <>
       <h4>Projects</h4>
       <div className={styles.projects_list}>
         {projects.map((project) => (
@@ -136,6 +136,6 @@ export default function Projects() {
           </div>
         ))}
       </div>
-    </section>
+    </>
   );
 }
