@@ -7,8 +7,22 @@ import '../../../css/carousel.scss';
 import { ExternalLink } from 'lucide-react';
 
 export default function Projects() {
-  const truncate = (text, max = 100) =>
-    text.length > max ? `${text.slice(0, max)}...` : text;
+  /**  텍스트를 지정된 길이로 자르고, 한글은 2글자로 계산*/
+const truncate = (text, max = 100) => {
+  let count = 0;
+  let result = '';
+
+  for (const char of text) {
+    // 한글은 2, 나머지는 1
+    count += /[가-힣]/.test(char) ? 2 : 1;
+    if (count > max) break;
+    result += char;
+  }
+
+  // 자른 뒤 실제 길이 초과 시 ... 붙이기
+  if (count > max) result += '...';
+  return result;
+};
 
   const { showPopup } = usePopup();
 
@@ -114,7 +128,7 @@ export default function Projects() {
             <span title={project.title}>{project.title}</span>    
          
             </div>
-            <p>{truncate(project.description, 58)}</p>
+            <p>{truncate(project.description, 90)}</p>
             <div className={styles.project_skill_list}>
               {project.skills.map((skillKey) => (
                 <div

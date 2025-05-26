@@ -17,7 +17,7 @@
 
  /* 기본 CSS 변수 설정 */
 :root {
-  --font-family-base: 'Noto Sans KR', sans-serif;
+  --font-family-base: 'Noto Sans KR', 'Roboto', Arial, sans-serif;
   --font-size-base: 14px;
   --font-subtitle:22px;
   --line-height-base: 1.5;
@@ -36,7 +36,7 @@
   
   // --skill-image1:url(../src/images/ai_logo.png)
   --skill-image-ai:     url('../images/ai_logo.png');
-  --skill-image-andst:    url('../images/and_st.png');
+  --skill-image-andst:  url('../images/and_st.png');
   --skill-image-css:    url('../images/css_logo.png');
   --skill-image-js:     url('../images/js_logo.png');
   --skill-image-react:  url('../images/react_logo.png');
@@ -46,8 +46,8 @@
   --skill-image-git:    url('../images/git_logo.png');
   --skill-image-w3c:    url('../images/w3c_logo.png');
   --skill-image-ws:     url('../images/ws_logo.png');
-  --skill-image-xd:    url('../images/xd_logo.png');
-  --skill-image-ps:    url('../images/ps_logo.png');
+  --skill-image-xd:     url('../images/xd_logo.png');
+  --skill-image-ps:     url('../images/ps_logo.png');
 }
 
 /* 박스 모델 초기화 */
@@ -66,6 +66,7 @@ html, body {
   line-height: var(--line-height-base);
   background-color: var(--color-bg1);
   color: var(--color-text);
+
 }
 
 h1 { font-size: 2em; margin: 0; padding: 0; }

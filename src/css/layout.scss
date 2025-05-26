@@ -17,7 +17,7 @@
 
  /* 기본 CSS 변수 설정 */
 :root {
-  --font-family-base: 'Noto Sans KR', sans-serif;
+  --font-family-base: 'Noto Sans KR', 'Roboto', Arial, sans-serif;
   --font-size-base: 14px;
   --font-subtitle:22px;
   --line-height-base: 1.5;
@@ -67,6 +67,7 @@ html, body {
   line-height: var(--line-height-base);
   background-color: var(--color-bg1);
   color: var(--color-text);
+    // font-family: 'Noto Sans KR', 'Roboto', Arial, sans-serif;
 }
 button, input, textarea {
   font-family: inherit;

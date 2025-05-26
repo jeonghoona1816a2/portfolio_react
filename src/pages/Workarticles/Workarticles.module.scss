@@ -1,0 +1,81 @@
+.section {
+  // section 자체에만 스타일 적용
+}
+
+.title {
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e0e0e0;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.article_title {
+  margin: 0 0 4px;
+  font-size: 1.125rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+.article_title:hover {
+ text-decoration: underline;
+}
+
+
+.date {
+  color: #888;
+  font-size: 0.875rem;
+}
+
+.link {
+  word-break: break-all;
+  color: #1976d2;
+  font-size: 0.95em;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+  button {
+    margin: 0 4px;
+    padding: 6px 12px;
+    border: none;
+    background: #f5f5f5;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+
+    &:hover:not(:disabled) {
+      background: #e0e0e0;
+    }
+
+    &.active {
+      font-weight: bold;
+      background: #d1d1d1;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+  }
+}
+
+.workarticles_modal {
+  // 모달 스타일(위에서 style로 들어간 부분 옮겨도 무방)
+}
