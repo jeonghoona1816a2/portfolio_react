@@ -22,7 +22,7 @@ export default function Header({ title }) {
         top: '20%',
         left: '50%',
         transform: 'translateX(-50%)',
-        width: '300px'
+        width: '100%'
     
       }
     );
@@ -35,7 +35,7 @@ export default function Header({ title }) {
         top: '10%',
         left: '50%',
         transform: 'translateX(-50%)',
-        width: '80%'
+        width: '100%'
       }
     );
   };

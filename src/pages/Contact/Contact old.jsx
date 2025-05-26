@@ -11,14 +11,11 @@ const initialState = {
 };
 
 const reasonOptions = [
-   'Web Desgin',
-  'Web Development',
-  'Mobile Development',
-  'UI/UX Design',
-  'Branding',
-  'package Design',
-  'Content Creation',
-  'etc.',
+  '',
+  '일반 문의',
+  '프로젝트 제안',
+  '기술 지원',
+  '기타',
 ];
 
 export default function Contact() {
@@ -29,23 +26,12 @@ export default function Contact() {
     setForm((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    try {
-      const res = await fetch('http://localhost:5000/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
-      });
-      if (res.ok) {
-        alert('문의가 전송되었습니다!');
-        setForm(initialState); // 이 부분에서 초기화
-      } else {
-        alert('서버 오류가 발생했습니다.');
-      }
-    } catch (err) {
-      alert('네트워크 오류');
-    }
+    // TODO: 서버 전송 로직 추가
+    console.log('문의내용:', form);
+    alert('문의가 전송되었습니다!');
+    setForm(initialState);
   };
 
   return (

@@ -2,18 +2,23 @@ import React, { useState } from 'react';
 import styles from './SettingsFrom.module.scss';
 
 export default function SettingsForm({ initialSettings, onSave }) {
-  // 초기 설정(theme)이 'dark'인지 여부로 state 초기화
   const [darkMode, setDarkMode] = useState(initialSettings.theme === 'dark');
+  const [fontSize, setFontSize] = useState(initialSettings.fontSize || 'medium');
+  const [skin, setSkin] = useState(initialSettings.skin || 'default');
 
-  // 스위치 토글 핸들러
-  const handleToggle = () => {
-    setDarkMode(prev => !prev);
+  // 관리자로 이동
+  const goAdmin = () => {
+    window.location.href = '/admin';
+    // 또는 react-router 사용 시: useNavigate()('/admin')
   };
 
-  // 폼 제출 핸들러: 새로운 설정 전달 후 부모에서 처리
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSave({ theme: darkMode ? 'dark' : 'light' });
+    onSave({
+      theme: darkMode ? 'dark' : 'light',
+      fontSize,
+      skin
+    });
   };
 
   return (
@@ -23,17 +28,46 @@ export default function SettingsForm({ initialSettings, onSave }) {
           <input
             type="checkbox"
             checked={darkMode}
-            onChange={handleToggle}
+            onChange={() => setDarkMode(prev => !prev)}
           />
           <span className={styles.slider} />
         </label>
         <span className={styles.label}>다크 모드</span>
       </div>
-      <button type="submit" className={styles.saveButton}>
-        저장
+
+      <div className={styles.field}>
+        <label className={styles.label}>폰트 크기</label>
+        <select
+          value={fontSize}
+          onChange={e => setFontSize(e.target.value)}
+        >
+          <option value="small">작게</option>
+          <option value="medium">보통</option>
+          <option value="large">크게</option>
+        </select>
+      </div>
+
+      <div className={styles.field}>
+        <label className={styles.label}>스킨</label>
+        <select
+          value={skin}
+          onChange={e => setSkin(e.target.value)}
+        >
+          <option value="default">기본</option>
+          <option value="blue">파랑</option>
+          <option value="green">초록</option>
+        </select>
+      </div>
+
+      <button type="submit" className={styles.saveButton}>저장</button>
+      <button
+        type="button"
+        className={styles.adminButton}
+        style={{ marginLeft: 8, background: '#df347f', color: '#fff' }}
+        onClick={goAdmin}
+      >
+        관리자 모드
       </button>
     </form>
   );
 }
-// Compare this snippet from src/component/Popup/ModalFrame/Popup.jsx:
-// // src/components/Popup/ModalFrame/Popup.jsx
