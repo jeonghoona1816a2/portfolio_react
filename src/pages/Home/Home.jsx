@@ -1,8 +1,7 @@
 import React from 'react';
 import styles from '../Home/Home.module.scss';
 import Projects from '../../components/layout/Projects';
-
-
+import { NavLink } from 'react-router-dom';
 export default function Home() {
    const skills = Array.from({ length: 13 }, (_, i) => i + 1);
 
@@ -29,7 +28,8 @@ export default function Home() {
              </section>  */}
 
              <section  style={{  zIndex: 2,}} >
-               <h4>Skills</h4>
+              <div className={styles.home_title}><h4>Skills</h4></div>
+      
                <div className={styles.skills_list}>        
                  {skills.map((num) => (
                           <div key={num} className={styles.skill_item}>
@@ -39,7 +39,17 @@ export default function Home() {
                </div>
              </section>
              <section>
-               <Projects />
+              
+              <div className={styles.home_title}>
+                  
+                <h4>Projects</h4>
+                <NavLink
+                to={'/Projects'}
+                // end={path === '/'}
+                className={styles.home_link}> 바로가기  </NavLink>
+              </div>
+           
+                   <Projects />
              </section>
        
           

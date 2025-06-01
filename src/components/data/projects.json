@@ -12,7 +12,7 @@
     "title": "SK하이닉스 내부 파일 승인 포털",
     "description": "하이닉스 내부 파일 승인 업무 포털의 디자인 및 퍼블리싱을 담당하여, 반응형 웹 구현과 크로스 브라우징·웹접근성 최적화를 수행했습니다.",
     "skills": ["html5","ai","xd","ps","css"],
-    "image": [],
+    "image": ["/images/portfolio/26-skhynix.png"],
     "link": ["001"]
   },
   {
@@ -31,22 +31,8 @@
     "image": [],
     "link": ["000"]
   },
-  {
-    "id": 5,
-    "title": "텐바이크 창업 및 운영",
-    "description": "서울시 청년창업 지원사업 선정 후 텐바이크 브랜드를 창업·운영하며, 상세페이지 디자인·홈페이지 제작, 콘텐츠 기획 및 마케팅 전략 수립을 담당했습니다.",
-    "skills": ["js","html5","css","ai","xd","ps"],
-    "image": ["/images/portfolio/06-tenbike-brand-launch.png"],
-    "link": ["000"]
-  },
-  {
-    "id": 6,
-    "title": "야구파크 홈페이지 제작 및 운영",
-    "description": "www.yagopark.com 홈페이지 기획·제작·운영 관리, UI/UX 개선 및 반응형 웹 구현, 콘텐츠·마케팅 전략을 총괄했습니다.",
-    "skills": ["js","ai"],
-    "image": [],
-    "link": ["000"]
-  },
+
+
   {
     "id": 7,
     "title": "UV PET 패키지 디자인 & 제품 디자인",
@@ -92,7 +78,7 @@
     "title": "Brochure Design",
     "description": "A단 접지 브로슈어 디자인 및 제품 촬영을 일괄 진행하여 비용 절감과 사용성 개선을 도모했습니다.",
     "skills": ["js","ai"],
-    "image": ["/images/portfolio/12-brochure-design (2).png"],
+    "image": ["/images/portfolio/12-brochure-design.png"],
     "link": ["000"]
   },
   {
@@ -109,6 +95,22 @@
     "description": "다이빙 용품 관련 제품 디자인 및 정보 디자인 프로젝트를 수행했습니다.",
     "skills": ["js","ai"],
     "image": ["/images/portfolio/14-diving-products1.png"],
+    "link": ["000"]
+  },
+    {
+    "id": 15,
+    "title": "야구파크 홈페이지 제작 및 운영",
+    "description": "www.yagopark.com 홈페이지 기획·제작·운영 관리, UI/UX 개선 및 반응형 웹 구현, 콘텐츠·마케팅 전략을 총괄했습니다.",
+    "skills": ["js","ai"],
+    "image": [],
+    "link": ["000"]
+  },
+    {
+    "id": 16,
+    "title": "텐바이크 창업 및 운영",
+    "description": "서울시 청년창업 지원사업 선정 후 텐바이크 브랜드를 창업·운영하며, 상세페이지 디자인·홈페이지 제작, 콘텐츠 기획 및 마케팅 전략 수립을 담당했습니다.",
+    "skills": ["js","html5","css","ai","xd","ps"],
+    "image": ["/images/portfolio/06-tenbike-brand-launch.png"],
     "link": ["000"]
   }
 ]

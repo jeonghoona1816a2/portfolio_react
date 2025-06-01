@@ -4,7 +4,7 @@ import projects from '../../data/projects.json';
 import styles from './Projects.module.scss';
 import { usePopup } from '../../Popup/PopupContext';
 import '../../../css/carousel.scss';
-import { ExternalLink } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 
 export default function Projects() {
   /**  텍스트를 지정된 길이로 자르고, 한글은 2글자로 계산*/
@@ -88,7 +88,6 @@ const truncate = (text, max = 100) => {
 
   return (
     <>
-      <h4>Projects</h4>
       <div className={styles.projects_list}>
         {projects.map((project) => (
            <div
@@ -125,7 +124,17 @@ const truncate = (text, max = 100) => {
 
             </div>
             <div className={styles.project_title}>
-            <span title={project.title}>{project.title}</span>    
+            
+            <span title={styles.project_title}>{project.title} </span>     
+                  <button className="button_small"
+              onClick={() => openProjectModal(project)} 
+              aria-label={`${project.title} 자세히 보기`}
+              title={`${project.title} 자세히 보기`}
+              >
+              <ChevronRight size={18} />
+            </button> 
+          
+
          
             </div>
             <p>{truncate(project.description, 90)}</p>
@@ -143,10 +152,7 @@ const truncate = (text, max = 100) => {
                 />
               ))}
             </div>
-           <button className="button_small"
-              onClick={() => openProjectModal(project)}        >
-              <ExternalLink  size={18} /> 자세히 보기
-            </button>
+   
           </div>
         ))}
       </div>

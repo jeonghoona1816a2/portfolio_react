@@ -9,7 +9,6 @@ export default function Projects() {
   return (
     <>
           {/* <ProjectsList style={{Header:"1500px"}} /> */}
-    <h4>Projects</h4>
 <hr />   <ProjectsTable projects={projectsData} />
     </>
 

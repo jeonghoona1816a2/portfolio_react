@@ -2,6 +2,7 @@
   width: 250px;
   background-color: var(--color-sidebar-bg);
   height: calc(100vh - 60px);
+  min-height: 610px;
   color: #fff;
   display: flex;
   // align-items: flex-start; // left → flex-start
@@ -99,10 +100,14 @@
       color: #fff;
       padding: var(--spacing-base);
       margin: 0;
-      font-size: 1rem;
+      font-size: 0.6rem;
       word-break: break-all;      // 단어 중간에서도 줄바꿈
       white-space: normal;  
       margin-bottom: 20px;
+      h5{
+        font-size: 0.7rem;
+        
+      }
     .title:nth-child(1){ color:#FF7143;}
     .title:nth-child(3){ color:#FF7143;}
     }
@@ -144,6 +149,7 @@
         display: flex;
     flex-direction: column;
     align-items: center;
+     width: 100px;
     }
   }
 

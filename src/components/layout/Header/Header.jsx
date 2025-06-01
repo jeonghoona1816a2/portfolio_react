@@ -5,7 +5,7 @@ import { Settings, MessageCircle } from 'lucide-react';
 import { usePopup } from '../../Popup/PopupContext';
 import SettingsForm from '../../Popup/SettingsForm';
 import TestForm from '../../Popup/TestForm';
-import CarouselWrapper from '../../../components/layout/CarouselWrapper/carouselWrapper';
+// import CarouselWrapper from '../../../components/layout/CarouselWrapper/carouselWrapper';
 
 export default function Header({ title }) {
 
@@ -41,7 +41,8 @@ export default function Header({ title }) {
   };
 
   return (
-    <header className={styles.header}> <CarouselWrapper/>
+    <header className={styles.header}> 
+    {/* <CarouselWrapper/> */}
       <h1 className={styles.title}>{title}</h1>
 
      <div>

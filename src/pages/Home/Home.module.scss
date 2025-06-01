@@ -1,3 +1,6 @@
+.home_title{display: flex; flex-direction: row; justify-content: space-between; align-items: center; margin: calc(var(--spacing-base) ) 0;  max-width: 100%; }
+
+
 .skills_list{display: flex; flex-direction: row; background-color: var(--color-bg2); height: 74px;    align-items: center; border-radius: var(  --radius-content);    justify-content: space-evenly;}
 .skill_item{width: 30px; height: 30px; background-color: aliceblue; }
 
